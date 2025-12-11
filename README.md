@@ -171,6 +171,7 @@ This marks the foundation for deeper analyses in the following questions, includ
 This analysis evaluates national compliance against CMS standards. We use the **National HPRD Minimums** that CMS applies for regulatory oversight and quality star rating calculations.
 
 ![](Q3_Standard_A_Compliance_FINAL.png)
+![](Q3_Standard_B_Compliance_FINAL.png)
 
 ***
 
@@ -227,13 +228,12 @@ The analysis reveals a structural imbalance in the U.S. nursing home staffing mo
 
 Addressing RN shortages represents the **most impactful pathway** toward improving resident safety, reducing citations, and enhancing quality outcomes. These findings set a clear foundation for the next stages of analysis,including state-level comparisons, regional trends, and identification of high-risk facility groups.
 
-[Embedded Chart: Q3_CMS_Compliance_Status_Breakdown.png]
-
-***
-
 ## **Q4 What is the Average HPRD by State?**
 
 This question aims to determine how nursing staffing levels vary across the United States. It establishes a state-by-state benchmark for the **Total HPRD** (Total Hours Per Resident Day) provided to residents.
+
+![](Q4_avg_hprd_by_state_desc.png)
+***
 
 #### Key Insight
 
@@ -258,10 +258,6 @@ National average Total HPRD is **7.69 hours**. There is a significant and persis
 #### Conclusion
 State-level HPRD results reveal significant geographic disparities in nursing care capacity. Some states maintain robust staffing structures, while others operate lean models that may challenge quality and safety expectations. These findings highlight the need for tailored, state-specific strategies to improve staffing adequacy, strengthen clinical oversight, and promote equitable care across regions. This state benchmark will inform deeper analysis in upcoming questions, including facility outliers, census-adjusted staffing, and weekday–weekend performance patterns.
 
-[Embedded Chart: Q4_State_Total_HPRD_Ranking.png]
-
-***
-
 ## **Q5 What is the RN–LPN–CNA Skill Mix by State?**
 
 This question examines how each U.S. state distributes its nursing workforce across the three core staffing roles:
@@ -271,6 +267,9 @@ This question examines how each U.S. state distributes its nursing workforce acr
 - **Certified Nursing Assistants (CNA)** — supporting daily resident care
 
 The skill mix is presented as the proportion of total HPRD contributed by each role.
+
+![](Q5_skill_mix_by_state_horizontal_stacked_descending.png)
+***
 
 #### Key Insight
 - **National Average Mix:** CNA hours dominate, representing approximately **59%** of total direct nursing HPRD. RNs provide the lowest proportion of care, reinforcing the finding from Q3 that RN staffing is the national vulnerability.
@@ -297,13 +296,14 @@ This skill-mix profile provides leadership with a clear view of where clinical v
 ### Recommendations
 Strengthen RN...
 
-[Embedded Chart: Q5_State_RN_LPN_CNA_Skill_Mix.png]
-
-***
 
 ## **Q6 Which states are the best and worst staffed overall?**
 
 This question identifies the top 10 and bottom 10 states for overall staffing quality in Q2 2024, using Total Hours Per Resident Day (HPRD) as the primary metric.
+
+![](Q6_bottom10_states_hprd_desc.png)
+![](Q6_top10_states_hprd_desc.png)
+***
 
 #### Key Insight
 
@@ -322,13 +322,12 @@ This rank-ordered list serves as a crucial benchmarking tool for operators, inve
 #### Conclusion
 The state-level rankings reveal entrenched geographic inequality in nursing home staffing. This stark difference in the volume of care provided per resident day must be considered in any national strategy aimed at improving quality of care and resident safety.
 
-[Embedded Chart: Q6_Top10_Bottom10_States_by_HPRD.png]
-
-***
-
 ## **Q7 Do different U.S. regions show unique staffing patterns?**
 
 This analysis aggregates state-level HPRD into the four standard US Census Bureau Regions (Northeast, South, Midwest, West) to identify macro-level geographic staffing differences.
+
+![](Q7_regional_skill_mix_grouped.png)
+***
 
 #### Key Insight
 
@@ -350,13 +349,12 @@ This regional view confirms that staffing challenges are often **systemic and re
 #### Conclusion
 The regional analysis provides compelling evidence of a fundamental geographic divide in nursing home staffing capacity, with the Southern US facing the greatest systemic challenge. Future policy and operational strategies must be designed with this regional context in mind to achieve equitable national staffing standards.
 
-[Embedded Chart: Q7_Regional_HPRD_Comparison.png]
-
-***
-
 ## **Q8 How does total staffing change day-by-day throughout Q2?**
 
 This analysis examines daily staffing hours across the entire quarter (April 1 to June 30, 2024) to detect trends, seasonality, and systemic operational patterns.
+
+![](Q8_daily_staffing_trend_with_weekends.png)
+***
 
 #### Key Insight
 - **Stable Weekday Hours:** The total nursing hours provided across the nation show high stability on weekdays, fluctuating only slightly with census.
