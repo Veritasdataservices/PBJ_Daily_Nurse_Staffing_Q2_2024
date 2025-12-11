@@ -128,7 +128,7 @@ for Q2 2024.
 
 This national benchmark helps stakeholders understand overall staffing sufficiency across all U.S. nursing facilities in Q2 2024 and sets the foundation for state comparisons, facility outlier detection, and compliance monitoring.
 
-![Q1 — National Average HPRD](Q1_national_avg_hprd.png)
+![](Q1_national_avg_hprd.png)
 
 
 ***
