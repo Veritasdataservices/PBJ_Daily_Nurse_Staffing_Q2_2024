@@ -137,7 +137,9 @@ This national benchmark helps stakeholders understand overall staffing sufficien
 
 This question examines the frequency distribution of the primary staffing metric, Total Hours Per Resident Day (HPRD), across all 14,564 facilities and 1.3 million daily records.
 
-![](Q2_HPRD_distribution.png)
+![](Q2_hprd_distribution.png)
+
+***
 
 
 The distribution analysis reveals:
@@ -163,13 +165,14 @@ The Q2 2024 HPRD distribution illustrates a stable national staffing landscape a
 
 This marks the foundation for deeper analyses in the following questions, including state comparisons, facility outlier identification, weekday–weekend patterns, and census-adjusted staffing evaluations.
 
-[Embedded Chart: Q2_HPRD_Distribution_Histogram.png]
-
-***
 
 ## **Q3 What percentage of facilities meet CMS expected staffing levels?**
 
 This analysis evaluates national compliance against CMS standards. We use the **National HPRD Minimums** that CMS applies for regulatory oversight and quality star rating calculations.
+
+![](Q3_Standard_A_Compliance_FINAL.png)
+
+***
 
 **Compliance Standards Evaluated:**
 - **Standard A (RN Minimum):** 0.55 RN HPRD (Registered Nurse hours per resident per day)
