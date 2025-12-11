@@ -7,7 +7,7 @@ The Payroll-Based Journal (PBJ) Daily Nurse Staffing Q2 2024 dataset, published 
 This project, conducted by Veritas Data Services, transforms this large administrative dataset into clear, actionable insights that help stakeholders understand staffing levels, operational patterns, and care delivery risks across facilities.
 ## Project Files & Technical Documentation
 
-🔹 **1. Data Cleaning & Preparation Notebook**
+ **1. Data Cleaning & Preparation Notebook**
 File: **PBJ_Daily_Nurse_Staffing_Q2_2024_Cleaning_Pipeline.ipynb**
 
 This notebook contains the full data engineering workflow, including:
@@ -21,7 +21,7 @@ This notebook contains the full data engineering workflow, including:
 
 This is the official **source of truth** for the dataset used in the entire project.
 
-🔹 **2. Full Analysis & Visualization Notebook**
+ **2. Full Analysis & Visualization Notebook**
 File: **PBJ_Daily_Nurse_Staffing_Q2_2024_Final.ipynb**
 
 This notebook contains:
@@ -746,6 +746,16 @@ By constructing **two scoring models**—a simple CMS-aligned measure and an adv
 
 The visualizations clearly show that states differ significantly depending on whether we measure **volume** (simple score) or **quality structure** (composite score).
 This provides a more complete and responsible picture of national staffing performance.
+
+
+
+
+
+
+## **Power BI Dashboard (Coming Soon)**
+
+A full interactive Power BI dashboard for the PBJ_Daily_Nurse_Staffing_Q2 2024 project is currently in development.
+Once completed, the dashboard will be embedded here to provide dynamic filtering, drill-through views, and state-to-facility-level exploration.
 
 
 ---
