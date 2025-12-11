@@ -128,13 +128,17 @@ for Q2 2024.
 
 This national benchmark helps stakeholders understand overall staffing sufficiency across all U.S. nursing facilities in Q2 2024 and sets the foundation for state comparisons, facility outlier detection, and compliance monitoring.
 
-[Q1_national_avg_hprd.png]
+![Q1 — National Average HPRD](Q1_national_avg_hprd.png)
+
 
 ***
 
 ## **Q2 How is the HPRD distribution structured nationwide?**
 
 This question examines the frequency distribution of the primary staffing metric, Total Hours Per Resident Day (HPRD), across all 14,564 facilities and 1.3 million daily records.
+
+![Q2 — Distribution of Total HPRD](Q2_hprd_distribution.png)
+
 
 The distribution analysis reveals:
 
