@@ -5,6 +5,47 @@
 The Payroll-Based Journal (PBJ) Daily Nurse Staffing Q2 2024 dataset, published by the Centers for Medicare & Medicaid Services (CMS), provides facility-level daily staffing and census data for U.S. nursing homes. This dataset is essential for regulatory oversight, quality measurement, and staffing compliance evaluation.
 
 This project, conducted by Veritas Data Services, transforms this large administrative dataset into clear, actionable insights that help stakeholders understand staffing levels, operational patterns, and care delivery risks across facilities.
+## Project Files & Technical Documentation
+
+🔹 **1. Data Cleaning & Preparation Notebook**
+File: **PBJ_Daily_Nurse_Staffing_Q2_2024_Cleaning_Pipeline.ipynb**
+
+This notebook contains the full data engineering workflow, including:
+* Raw PBJ Q2 2024 data loading
+* Data type corrections
+* Missing value assessments
+* Outlier detection and handling
+* Creation of all derived staffing metrics (**HPRD**, **skill-mix ratios**, **composite features**)
+* Validation checks (**zero-hours**, **unrealistic values**, **consistency validation**)
+* Final cleaned dataset export used for all analysis and charts
+
+This is the official **source of truth** for the dataset used in the entire project.
+
+🔹 **2. Full Analysis & Visualization Notebook**
+File: **PBJ_Daily_Nurse_Staffing_Q2_2024_Final.ipynb**
+
+This notebook contains:
+* All **20 analytical questions**
+* Full Python code, EDA, and computation steps
+* The formulas and calculations used to derive all insights
+* All chart generation code (**Q1–Q20**)
+* The final analytical interpretations behind each finding
+* Regulatory reasoning, workforce logic, and quality implications
+
+This notebook represents the complete **analytical engine** of the project and aligns exactly with the insights presented in the README.
+
+**Usage Note for Reviewers**
+Both notebooks are included so that stakeholders, auditors, and collaborators can:
+
+* **Validate calculations**
+* **Reproduce results**
+* **Review all transformations** from raw CMS PBJ data to final insights
+* **Inspect code quality**, methodological consistency, and analytic rigor
+
+## References
+- Veritas Data Services. *PBJ Daily Nurse Staffing – Q2 2024 Cleaning Pipeline.* Jupyter Notebook.  
+- Veritas Data Services. *PBJ Daily Nurse Staffing – Q2 2024 Full Analysis & Visualization.* Jupyter Notebook.  
+- Centers for Medicare & Medicaid Services (CMS). Payroll-Based Journal (PBJ) Daily Nurse Staffing Data, Q2 2024 Release.
 
 ## Dataset Overview
 
@@ -565,7 +606,7 @@ The analysis of data anomalies reveals that the most significant quality issue i
 This quality check identifies facilities reporting HPRD figures so high that they are statistically impossible or highly suspicious of data entry errors. We use the 99th percentile as the extreme outlier threshold.
 
 ![](q16_unrealistic_facility_counts.png)
-![](q16_Maximum daily total staffing.png)
+![](q16_Maximum_daily_totalstaffing.png)
 ***
 
 #### Key Insight
