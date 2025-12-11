@@ -370,13 +370,12 @@ The weekend staffing deficit is a well-documented quality-of-care risk. Lower we
 #### Conclusion
 The Q2 2024 daily trend confirms a persistent, national operational weakness characterized by lower weekend staffing. This pattern must be addressed through targeted compensation and regulatory requirements to eliminate the 'weekend effect' on resident safety and quality of care.
 
-[Embedded Chart: Q8_Total_HPRD_Daily_Trend_Q2.png]
-
-***
-
 ## **Q9 Do facilities staff differently on weekdays compared to weekends?**
 
 This question quantifies the average difference in HPRD (Hours Per Resident Day) between weekdays (Monday-Friday) and weekends (Saturday-Sunday) to isolate the 'weekend effect.'
+
+![](Q9_weekday_weekend_staffing_corrected.png)
+***
 
 #### Key Insight
 
@@ -398,11 +397,11 @@ The weekend staffing deficiency is not only quantitative (less total staff) but 
 #### Conclusion
 The Q2 2024 data unequivocally confirms a national 'weekend effect' where staffing is reduced across the board, led by a critical **9.3% deficit in Registered Nurse hours**. This structural operational instability presents an avoidable risk to resident safety and must be proactively managed.
 
-[Embedded Chart: Q9_Weekend_vs_Weekday_HPRD_Deficit.png]
-
-***
-
 ## **Q10 Which facilities show consistently low staffing (“red flags”)?**
+
+![](Q10A_critical_redflag_states_top15.png)
+![](Q10B_undersaffed_below5_states_top15.png)
+***
 
 This question identifies facilities that are national outliers in *low* staffing, creating a preliminary **National Red Flag Watch List**. We define "consistently low staffing" as facilities with an average Total HPRD below the national 10th percentile (6.0 HPRD).
 
@@ -429,11 +428,10 @@ The identification of 1,456 consistently low-staffed facilities provides a clear
 
 Overall, these findings reinforce the importance of **consistent staffing monitoring and targeted resource allocation** to protect resident safety and improve nationwide nursing home performance.
 
-[Embedded Chart: Q10_RedFlag_Facility_Watch_List.png]
-
-***
-
 ## **Q 11. Which facilities show unusual staffing variability?**
+
+![](q11_facility_variability_scatter.png)
+***
 
 This analysis identifies facilities with high **coefficient of variation (CV)** in their daily Total HPRD, signifying operational instability (large, frequent swings between high and low staffing days).
 
@@ -454,13 +452,12 @@ High variability is almost as dangerous as low average staffing. Erratic staffin
 #### Conclusion
 Staffing stability is a critical indicator of operational health. The highly variable facilities identified require focused administrative and reporting oversight to minimize instability and ensure reliable care delivery.
 
-[Embedded Chart: Q11_Staffing_Variability_CV_Distribution.png]
-
-***
-
 ## **Q12 How strongly is resident census related to staffing levels?**
 
 This question examines the correlation between a facility's average resident **Census** (number of residents) and its average **Total HPRD** (staffing level).
+
+![](q12_census_vs_hprd_scatter_trend_colored.png)
+***
 
 #### Key Insight
 - **Overall Correlation:** There is a **very weak, near-zero correlation** ($r = -0.01$) between a facility's average census and its average Total HPRD. This means facilities with high census are **not** consistently providing higher staffing (HPRD), and facilities with low census are **not** consistently providing lower staffing.
@@ -476,13 +473,13 @@ This finding provides a vital quality check on the PBJ system. The lack of a str
 #### Conclusion
 The HPRD metric is robustly independent of facility size, allowing for fair and accurate comparison of staffing quality across the U.S. nursing home sector.
 
-[Embedded Chart: Q12_Census_vs_HPRD_Correlation.png]
-
-***
 
 ## **Q13 Which facilities have high resident census but low staffing (High-Risk)?**
 
 This question identifies facilities where **high resident volume** is paired with **low staffing levels** (low HPRD), creating a high-risk operational environment.
+
+![](q13_high_census_low_staffing_scatter.png)
+***
 
 #### Key Insight
 - **Methodology:** High-risk facilities are defined as those that meet *both* criteria:
@@ -505,13 +502,13 @@ This finding provides a clear, high-priority list for regulators and corporate t
 #### Conclusion
 High-volume, low-staffing facilities represent a high-priority risk cluster. Targeted intervention at these 750 facilities will have the most significant impact on improving resident safety across the large census volume they serve.
 
-[Embedded Chart: Q13_HighRisk_Quadrant_Analysis.png]
-
-***
 
 ## **Q14 Are all Provider IDs (PROVNUM) consistently present and valid?**
 
 This quality check verifies that the unique facility identifier (`PROVNUM`) is present and correctly formatted across all 1.3 million daily records.
+
+![](q14_staffing_missing_vs_valid_IDs.png
+***
 
 #### Key Insight
 
@@ -532,13 +529,13 @@ Even though no issues were found, we propose the following actions for ongoing d
 2. **Monitor future quarterly submissions** Missing Provider IDs can occur during system transitions or staffing changes. Routine validation helps ensure consistent data linkage.
 3. **Document completeness as part**
 
-[Embedded Chart: Q14_ProviderID_Completeness_Check.png]
-
-***
-
 ## **Q15 Are there abnormal zeros, sudden jumps, or strange values?**
 
 This data quality check identifies non-physical, non-reported, or suspicious values in the staffing hours data, which often indicate reporting errors (e.g., system downtime, payroll lag, or data entry mistakes).
+
+![](q15_spike_boxplots_fixed.png)
+![](q15_zero_count_bar_fixed.png)
+***
 
 #### Key Insight
 
@@ -563,13 +560,13 @@ In both cases, this data provides a targeted list of 89,000 daily records (acros
 #### Conclusion
 The analysis of data anomalies reveals that the most significant quality issue is the high frequency of zero-RN-hour days, which serves as a dual-purpose flag for both genuine safety risk and potential reporting failure.
 
-[Embedded Chart: Q15_Zero_Hour_Anomalies_by_Role.png]
-
-***
-
 ## **Q16 Are some facilities reporting unrealistic staffing numbers?**
 
 This quality check identifies facilities reporting HPRD figures so high that they are statistically impossible or highly suspicious of data entry errors. We use the 99th percentile as the extreme outlier threshold.
+
+![](q16_Maximum daily total staffing.png)
+![](q16_unrealistic_facility_counts.png)
+***
 
 #### Key Insight
 
@@ -586,15 +583,17 @@ This small group of 145 facilities is crucial for internal data cleaning and mod
 #### Conclusion
 While rare, unrealistic staffing figures compromise the fidelity of national averages and advanced models. These facilities serve as targets for data quality improvement, not necessarily for clinical intervention.
 
-[Embedded Chart: Q16_High_Outlier_HPRD_Check.png]
-
-***
 
 ## **Q17 Are some facilities substituting staff types?**
 
 This question uses correlation analysis to determine if facilities are intentionally replacing higher-skilled, more expensive staff (RNs) with lower-skilled staff (LPNs or CNAs) due to cost pressures or shortages.
 
 Substitution is defined as: **An inverse correlation** between RN hours and LPN/CNA hours. (As RN hours decrease, LPN/CNA hours increase, and vice versa).
+
+![](q17_LPN_vs_CNA_scatter.png)
+![](q17_RN_vs_CNA_scatter.png)
+![](q17_RN_vs_LPN_scatter.png)
+***
 
 #### Key Insight
 
@@ -614,13 +613,13 @@ The positive correlation suggests that staffing models are generally **coordinat
 
 The Q2 2024 PBJ data shows **no substitution** occurring between RN, LPN, or CNA roles. All staffing categories trend positively together, demonstrating stable, coordinated staffing models rather than replacement strategies. Facilities appear to maintain appropriate role differentiation consistent with regulatory expectations.
 
-[Embedded Chart: Q17_Staff_Role_Substitution_Check.png]
-
-***
-
 ## **18.Top & Bottom 5% facilities — “Watch list” analysis**
 
 This question identifies the national extremes in staffing performance: the **Excellence List** (top 5% by Total HPRD) and the **Critical Watch List** (bottom 5% by Total HPRD).
+
+![](q18_facility_counts_top_bottom_5_with_legend.png)
+![](q18_hprd_distribution_corrected.png)
+***
 
 #### Key Insight
 
@@ -643,13 +642,13 @@ This two-tiered list provides immediate, clear targets for both risk mitigation 
 #### Conclusion
 The Top and Bottom 5% lists provide the industry with a clear data-driven map of the most significant performance extremes.
 
-[Embedded Chart: Q18_Top5_Bottom5_Watch_List.png]
-
-***
 
 ## **19. How do all staffing roles relate to each other?**
 
 This analysis computes a full **correlation matrix** across all staffing roles (RN, LPN, CNA, NA Trainees, Medication Aides) to understand the professional relationship structure within the nursing workforce.
+
+![](q19_staffing_correlation_heatmap.png)
+***
 
 #### Key Insight
 
@@ -667,9 +666,6 @@ The correlation matrix reveals a workforce that is generally stable and compleme
 #### Conclusion
 The correlation matrix validates the overall structural integrity of the national staffing model, where roles are generally complementary. The data highlights a potential missed opportunity in integrating the NA trainee workforce consistently.
 
-[Embedded Chart: Q19_Staffing_Role_Correlation_Matrix.png]
-
-***
 
 ## **20. What is the overall staffing quality score for each state?**
 
@@ -678,6 +674,10 @@ This question creates a multi-layered **Staffing Quality Score** for all 50 stat
 Two scoring models were constructed:
 1.  **Simple Staffing Score:** A weighted score combining Total HPRD (40%), RN HPRD (40%), and RN Skill Mix (20%). This score prioritizes the sheer **volume and clinical depth** of care.
 2.  **Composite Staffing Score:** An advanced Z-score model incorporating the Simple Score components plus a **Staffing Stability Bonus** (a penalty for high variance in daily hours) and an **Outlier Penalty** for unrealistic high HPRD. This score prioritizes **consistency, stability, and integrity** of care.
+
+![](q20_composite_staffing_score_normalized.png)
+![](q20_simple_staffing_score_normalized.png)
+***
 
 #### Key Insight
 
@@ -706,7 +706,6 @@ By constructing **two scoring models**—a simple CMS-aligned measure and an adv
 The visualizations clearly show that states differ significantly depending on whether we measure **volume** (simple score) or **quality structure** (composite score).
 This provides a more complete and responsible picture of national staffing performance.
 
-[Embedded Chart: Q20_Composite_Staffing_Quality_Score.png]
 
 ---
 © 2025 Veritas Data Services. All rights reserved.
