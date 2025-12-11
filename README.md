@@ -40,7 +40,7 @@ These insights support decision-making for:
 
 Below are the key questions this analysis will answer. These questions are written in clear, non-technical language so that any reader including non-analysts can understand the purpose and value of each part of the study.
 
-# ⭐ NATIONAL STAFFING LEVELS
+# NATIONAL STAFFING LEVELS
 
 ### **1. What is the national average amount of nursing care each resident receives per day?**
 (We will calculate the Hours Per Resident Day — HPRD — for RN, LPN, CNA, and Total.)
@@ -51,7 +51,7 @@ Below are the key questions this analysis will answer. These questions are writt
 ### **3. What percentage of facilities meet or fall below expected staffing requirements?**
 (Helps identify whether staffing is generally adequate across the country.)
 
-# ⭐ STATE & REGIONAL COMPARISONS
+# STATE & REGIONAL COMPARISONS
 
 ### **4. How do average staffing levels differ from state to state?**
 (Some states may consistently staff better or worse than others.)
@@ -65,7 +65,7 @@ Below are the key questions this analysis will answer. These questions are writt
 ### **7. Do different U.S. regions show unique staffing patterns?**
 (Northeast vs South vs Midwest vs West.)
 
-# ⭐ FACILITY-LEVEL OPERATIONS
+# FACILITY-LEVEL OPERATIONS
 
 ### **8. How does total staffing change day-by-day throughout Q2?**
 (We will look at trends from April to June.)
@@ -79,7 +79,7 @@ Below are the key questions this analysis will answer. These questions are writt
 ### **11. Which facilities show unusual spikes or drops in staffing?**
 (These may indicate reporting issues or operational instability.)
 
-# ⭐ CENSUS & STAFFING RELATIONSHIP
+# CENSUS & STAFFING RELATIONSHIP
 
 ### **12. How strongly is resident census related to staffing levels?**
 (Are high-census facilities providing enough care?)
@@ -87,7 +87,7 @@ Below are the key questions this analysis will answer. These questions are writt
 ### **13. Which facilities have many residents but low staffing?**
 (These will be highlighted as high-risk facilities.)
 
-# ⭐ DATA QUALITY & REPORTING CHECKS
+# DATA QUALITY & REPORTING CHECKS
 
 ### **14. Do facilities with missing or invalid Provider IDs show different staffing patterns?**
 (This helps detect reporting problems.)
@@ -98,7 +98,7 @@ Below are the key questions this analysis will answer. These questions are writt
 ### **16. Are some facilities reporting unrealistic staffing numbers?**
 (We check for impossible or suspicious patterns.)
 
-# ⭐ ADVANCED STAFFING ANALYTICS
+# ADVANCED STAFFING ANALYTICS
 
 ### **17. Are some facilities substituting staff types?**
 (Example: Using more CNAs instead of RNs or vice versa.)
@@ -137,7 +137,7 @@ This national benchmark helps stakeholders understand overall staffing sufficien
 
 This question examines the frequency distribution of the primary staffing metric, Total Hours Per Resident Day (HPRD), across all 14,564 facilities and 1.3 million daily records.
 
-![](Q2_hprd_distribution.png)
+![](Q2_HPRD_Distribution.png)
 
 ***
 
