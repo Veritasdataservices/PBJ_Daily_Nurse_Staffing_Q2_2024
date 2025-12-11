@@ -564,8 +564,8 @@ The analysis of data anomalies reveals that the most significant quality issue i
 
 This quality check identifies facilities reporting HPRD figures so high that they are statistically impossible or highly suspicious of data entry errors. We use the 99th percentile as the extreme outlier threshold.
 
-![](q16_Maximum daily total staffing.png)
 ![](q16_unrealistic_facility_counts.png)
+![](q16_Maximum daily total staffing.png)
 ***
 
 #### Key Insight
