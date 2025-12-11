@@ -137,7 +137,7 @@ This national benchmark helps stakeholders understand overall staffing sufficien
 
 This question examines the frequency distribution of the primary staffing metric, Total Hours Per Resident Day (HPRD), across all 14,564 facilities and 1.3 million daily records.
 
-![Q2 — Distribution of Total HPRD](Q2_hprd_distribution.png)
+!![](Q2_hprd_distribution.png)
 
 
 The distribution analysis reveals:
