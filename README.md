@@ -607,7 +607,9 @@ This quality check identifies facilities reporting HPRD figures so high that the
 
 ![](q16_unrealistic_facility_counts.png)
 
-![](q16_maximum_daily_total.png)
+***
+
+![](Q16_max_stuf.png)
 
 ***
 
