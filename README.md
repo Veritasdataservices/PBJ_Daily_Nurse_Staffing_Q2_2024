@@ -32,7 +32,7 @@ This notebook contains:
 * The final analytical interpretations behind each finding
 * Regulatory reasoning, workforce logic, and quality implications
 
-This notebook represents the complete **analytical engine** of the project and aligns exactly with the insights presented in the README.
+This notebook represents the complete **analytical engine** of the project giving more depth to all the insights presented in the README.
 
 **Usage Note for Reviewers**
 Both notebooks are included so that stakeholders, auditors, and collaborators can:
