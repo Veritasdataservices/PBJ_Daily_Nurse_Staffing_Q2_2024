@@ -400,7 +400,7 @@ The Q2 2024 data unequivocally confirms a national 'weekend effect' where staffi
 ## **Q10 Which facilities show consistently low staffing (“red flags”)?**
 
 ![](Q10A_critical_redflag_states_top15.png)
-![](Q10B_undersaffed_below5_states_top15.png)
+![](Q10B_understaffed_below5_states_top15.png)
 ***
 
 This question identifies facilities that are national outliers in *low* staffing, creating a preliminary **National Red Flag Watch List**. We define "consistently low staffing" as facilities with an average Total HPRD below the national 10th percentile (6.0 HPRD).
@@ -507,7 +507,7 @@ High-volume, low-staffing facilities represent a high-priority risk cluster. Tar
 
 This quality check verifies that the unique facility identifier (`PROVNUM`) is present and correctly formatted across all 1.3 million daily records.
 
-![](q14_staffing_missing_vs_valid_IDs.png
+![](q14_staffing_missing_vs_valid_IDs.png)
 ***
 
 #### Key Insight
