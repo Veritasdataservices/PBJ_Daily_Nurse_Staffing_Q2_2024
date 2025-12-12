@@ -918,28 +918,119 @@ This data quality check identifies non-physical, non-reported, or suspicious val
 ![](q15_zero_count_bar_fixed.png)
 ***
 
-#### Key Insight
+## **Process Overview (Clear and Simple)**
+To determine whether facilities recorded unusual staffing patterns in Q2 2024, we evaluated daily PBJ-reported staffing hours using two approaches:
 
-- **Abnormal Zeros:** The analysis found abnormal zero counts in the hour columns, particularly in licensed nurse categories.
-    - RN Hours = 89,326 zero days (6.7% of all daily records)
-    - LPN Hours = 32,697 zero days (2.5% of all daily records)
-    - CNA Hours = 5,785 zero days (0.4% of all daily records)
-- **High RN Zero Rate:** The high number of days reporting **zero RN hours** (89k records) is the most concerning finding. This indicates that roughly one in every 15 days, a facility reported no Registered Nurse presence.
-- **High Outliers:** A review of extreme maximum HPRD values (e.g., >30 HPRD) suggests possible data entry errors, but these are statistically rare and do not distort the national average.
+**Abnormal Zeros**
+These occur when staffing hours are recorded as 0, which is operationally impossible since facilities must always have nursing staff present.
+We focused on:
 
-#### Professional interpretation (stakeholder friendly)
-The 89,000 days of reported zero RN coverage highlight the severity of the RN shortage and the potential for regulatory violations (CMS staffing mandates require some licensed coverage). These zeros represent either:
-1. **Actual Gaps in Coverage:** A facility truly operated without an RN for an entire day, a critical safety risk.
-2. **Data-Entry Failure:** The facility payroll system failed to report the hours correctly.
+**total_hours**
+**hprd_total** (Hours Per Resident Per Day)
+A zero in these fields strongly suggests missing entries, upload errors, or incomplete PBJ reporting.
 
-In both cases, this data provides a targeted list of 89,000 daily records (across ~3,000 unique facilities) that require compliance review.
+**Spikes** (Extremely High Hours)
+Spikes represent staffing hours far outside normal ranges.
+We used the Interquartile Range (IQR) method:
 
-### Recommendations
-1. **Target Zero-RN Facilities:** Facilities with frequent zero-RN days should be prioritized for compliance auditing, focusing on whether an RN was genuinely absent or if a reporting mechanism failed.
-2. **Regulatory Clarification:** CMS should issue clearer guidance on how to report days with *minimal* but non-zero staffing to avoid an artificially high number of zero-hour days.
+**IQR** = the middle 50% of the data
+Spike Threshold = Q3 + 1.5 × IQR
+Any value above this threshold is considered an outlier or anomaly.
+These usually result from:
 
-#### Conclusion
-The analysis of data anomalies reveals that the most significant quality issue is the high frequency of zero-RN-hour days, which serves as a dual-purpose flag for both genuine safety risk and potential reporting failure.
+Monthly totals submitted as daily values
+Duplicate entries
+Timekeeping or reporting system errors
+Why NA_hours and MedAide_hours Were Excluded
+Two staffing fields were intentionally excluded:
+
+**NA_hours** (Nurse Aide Trainee Hours)
+Most facilities do not run training programs daily, so zeros are expected.
+
+**MedAide_hours** (Medication Aide Hours)
+Many facilities and states do not employ Med Aides. Zeros are normal.
+
+Including these would create false anomalies.
+We focused on operationally essential roles:
+
+**RN_hours** (Registered Nurses)
+**LPN_hours** (Licensed Practical Nurses)
+**CNA_hours** (Certified Nursing Assistants)
+**Skilled_hours**
+**total_hours**
+**hprd_total**
+Findings
+1. Abnormal Zero Staffing Records
+These values indicate missing or incomplete PBJ entries, not real operating conditions:
+
+Metric	Zero Count	Interpretation
+total_hours = 0	2,677	Operationally impossible → missing or incorrect reporting
+hprd_total = 0	2,522	Also impossible → driven by missing total hours
+Nursing facilities cannot legally operate with zero documented staff.
+
+2. Abnormal Spikes in Staffing Hours
+Spike thresholds (IQR-based):
+
+Total-hours threshold: 1,368.9 hours/day
+HPRD threshold: 11.69 hours per resident per day
+Detected anomalies:
+
+Metric	Spike Count	Interpretation
+total_hours spikes	48,763	Likely monthly totals entered as daily hours
+hprd_total spikes	53,968	Mathematically impossible staffing levels
+Some entries were as high as 28,158 hours in a single day — operationally impossible.
+
+These spikes indicate reporting inconsistencies, not real staffing activity.
+
+## **Insight**
+The Q2 2024 PBJ dataset contains two major categories of staffing anomalies:
+
+1. Abnormal Zeros
+Over 2,600 daily records show zero total nursing hours, which is impossible for a licensed nursing facility.
+This signals data-entry gaps, failed uploads, or incomplete PBJ submissions.
+
+2. Unrealistic High Spikes
+Tens of thousands of records exceed feasible staffing levels for a 24-hour period.
+These anomalies point to:
+
+Incorrect file formatting
+Duplicate/timekeeping errors
+Monthly totals submitted in place of daily totals
+These issues reduce PBJ dataset reliability and may distort staffing interpretations if uncorrected.
+
+## **Recommendation**
+To improve PBJ data integrity:
+
+Implement automated pre-submission validation
+Flag:
+
+total_hours = 0
+hprd_total = 0
+total_hours above realistic operational limits
+HPRD exceeding 12
+Audit facilities with repeated spikes or zeros
+Frequent anomalies may indicate poor documentation or incorrect PBJ workflows.
+
+Provide targeted PBJ training
+Many errors stem from misunderstanding reporting rules.
+
+Encourage daily digital timekeeping
+Reduces manual entry errors and prevents uploading monthly totals as daily values.
+
+## **Conclusion**
+This analysis reveals significant data-quality issues in PBJ staffing submissions:
+
+Thousands of records report impossible zero-staffing values.
+Tens of thousands show spikes far beyond operational staffing limits.
+These anomalies do not reflect true care conditions but highlight reporting system challenges, documentation inconsistencies, and the need for improved validation.
+
+Addressing these issues will enhance:
+
+PBJ reporting accuracy
+Staffing transparency
+Compliance readiness
+Overall confidence in the dataset
+This question underscores the importance of robust data integrity practices in healthcare staffing analytics.
 
 ## **Q16 Are some facilities reporting unrealistic staffing numbers?**
 
