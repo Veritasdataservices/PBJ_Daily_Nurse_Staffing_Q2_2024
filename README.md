@@ -517,25 +517,51 @@ This question quantifies the average difference in HPRD (Hours Per Resident Day)
 ![](Q9_weekday_weekend_staffing_corrected.png)
 ***
 
-#### Key Insight
+## **Key Insight**
+Facilities provide significantly higher staffing coverage on weekdays than weekends across all staffing categories **(RN, LPN, CNA).**
 
-Staffing is consistently **lower on weekends** for all licensed categories:
-- **Total HPRD:** 9.3% lower on weekends (7.34 HPRD) vs weekdays (8.04 HPRD).
-- **RN HPRD:** The most significant drop is observed in RN coverage, which is **9.3% lower** on weekends (0.428 HPRD) than on weekdays (0.472 HPRD).
-- **LPN HPRD:** Shows a 6.2% drop.
-- **CNA HPRD:** Shows a 5.8% drop.
+**Total HPRD** drops from 8.08 on weekdays to 6.72 on weekends, a decline of ~17%, indicating a substantial weekend staffing gap.
 
-The **RN deficit** is the most clinically concerning finding, as it means the highest-skilled care is the most likely to be unavailable when critical health incidents occur on weekends.
+**RN** coverage decreases from 0.47 → 0.43 HPRD, suggesting reduced clinical oversight during weekends.
 
-#### Professional interpretation (stakeholder friendly)
-The weekend staffing deficiency is not only quantitative (less total staff) but also **qualitative** (less skilled staff). The drop in RN hours means that high-level clinical judgment is reduced during these 48 hours, directly increasing the risk of adverse events and the likelihood of inappropriate hospitalization. Addressing this RN weekend coverage gap is paramount for improving quality measures.
+**LPN** hours fall from 0.82 → 0.73 HPRD, and CNA hours decrease from 2.16 → 1.99 HPRD, indicating thinner frontline staffing during resident-care-intensive days.
 
-### Recommendations
-1. **Targeted RN Weekend Bonus:** Offer substantial compensation incentives to increase the baseline RN HPRD on weekends.
-2. **Shift Oversight Focus:** Regulators and corporate oversight teams should shift their auditing focus to weekends, as the data clearly indicates this is the period of highest risk.
+**CNA** hours experience the largest absolute drop, which is critical as CNAs contribute the highest proportion of total care hours.
 
-#### Conclusion
-The Q2 2024 data unequivocally confirms a national 'weekend effect' where staffing is reduced across the board, led by a critical **9.3% deficit in Registered Nurse hours**. This structural operational instability presents an avoidable risk to resident safety and must be proactively managed.
+Professional interpretation (stakeholder-friendly)
+
+The weekend staffing decline reflects a systemic pattern, not facility-specific noise.
+
+**Lower RN** availability may affect:
+
+clinical assessments
+
+response times
+
+care plan adjustments
+
+medication management
+
+**CNA** reductions can translate into:
+
+slowed daily care delivery
+
+increased staff workload
+
+resident wait-time concerns
+
+The observed weekend shortfall aligns with national staffing challenges and is a known predictor of:
+
+increased adverse events
+
+missed care
+
+higher Monday correction loads
+
+Decision-makers should view this pattern as a compliance and quality signal, not merely an operational variation.
+
+## **Recommendations**
+Strengthen weekend RN coverage Implement staggered scheduling, weekend differential pay, or incentive structures to prevent dips
 
 ## **Q10 Which facilities show consistently low staffing (“red flags”)?**
 
