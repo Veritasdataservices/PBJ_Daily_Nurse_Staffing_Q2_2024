@@ -394,26 +394,36 @@ This question identifies the top 10 and bottom 10 states for overall staffing qu
 ![](Q6_top10_states_hprd_desc.png)
 ***
 
-#### Key Insight
+## **Key Insight**
+The analysis identifies significant variation in Total Hours Per Resident Per Day (HPRD) across U.S. states, revealing clear differences in staffing capacity and care delivery strength.
 
-- **Top 10 States:** The states with the highest overall HPRD are characterized by higher wage environments, strong regulatory mandates, or unique demographic needs (e.g., New York, Massachusetts, Alaska, Oregon).
-- **Bottom 10 States:** The states with the lowest HPRD are often located in the South, where lower wages and lower Medicaid reimbursement rates may constrain staffing budgets (e.g., Louisiana, Texas, Oklahoma).
-- **The Gap:** The difference between the highest-staffing state (New York: 9.94 HPRD) and the lowest-staffing state (Louisiana: 6.64 HPRD) is **3.30 hours of care per resident per day**, representing a profound geographic disparity in resident care intensity.
+Best-staffed states **(highest HPRD)** include Alaska (13.33), Puerto Rico (10.77), Oregon (10.08), and Washington D.C. (9.98), all well above national averages.
 
-#### Professional interpretation (stakeholder friendly)
-This rank-ordered list serves as a crucial benchmarking tool for operators, investors, and regulators. The Bottom 10 states are immediately flagged for higher clinical risk, increased regulatory scrutiny, and a likely correlation with poorer quality outcomes. The Top 10 states provide models for best practice, demonstrating that high-quality, high-volume staffing models are achievable.
+Worst-staffed states **(lowest HPRD)** include Missouri (6.72), Texas (6.74), Illinois (6.88), and Georgia (7.13), operating with considerably leaner staffing capacity.
 
-### Recommendations
-1. **Target the Bottom 10** for policy intervention, increased funding support, and proactive workforce development programs.
-2. **Conduct deep-dive comparative analysis** between high- and low-performing states to isolate the impact of regulatory, financial, and labor market factors.
-3. **Use these rankings** to guide capital allocation and investment strategies, as staffing levels directly correlate with overall facility risk profile.
+The gap between the top and bottom demonstrates a nearly twofold difference in total nursing hours, indicating substantial geographic disparities in resident care intensity.
 
-#### Conclusion
-The state-level rankings reveal entrenched geographic inequality in nursing home staffing. This stark difference in the volume of care provided per resident day must be considered in any national strategy aimed at improving quality of care and resident safety.
+Professional interpretation (stakeholder friendly)
 
-## **Q7 Do different U.S. regions show unique staffing patterns?**
+**High-HPRD** states represent stronger staffing environments, often associated with better care oversight, improved care-plan execution, and lower risk of missed care. Their higher staffing levels may reflect stronger funding, wage competitiveness, or state regulations requiring higher minimum hours.
 
-This analysis aggregates state-level HPRD into the four standard US Census Bureau Regions (Northeast, South, Midwest, West) to identify macro-level geographic staffing differences.
+**Low-HPRD** states may be experiencing systemic staffing shortages, budgetary constraints, or workforce supply limitations. These areas face higher clinical risk, including delays in response times, reduced supervision, and dependence on lean care teams.
+
+The findings indicate that a resident’s expected standard of care can vary significantly depending on geographic location, creating national inequities in long-term care outcomes.
+
+Operators and policymakers in low-HPRD states may require targeted support to stabilize staffing capacity and reduce compliance vulnerabilities.
+
+## **Recommendations**
+Target Workforce Support to Low-HPRD States Implement staffing incentives, wage adjustments, or recruitment programs in Missouri, Texas, Illinois, Georgia, and similar states to stabilize staffing levels and reduce clinical risk.
+
+Benchmark Best-Staffed States for Operational Models Study staffing mix, scheduling, wage structures, and care-delivery models from Alaska, Oregon, D.C., and Hawaii to replicate scalable strategies in lower-performing states.
+
+Use HPRD as a Risk Monitoring Indicator States consistently below ~7.0 hours should be considered “high-risk” for care quality issues, requiring enhanced internal monitoring, corporate oversight, or regulatory attention.
+
+Allocate Funding and Training Resources Strategically Federal and state agencies can use this topline ranking to prioritize technical assistance, clinical training pipelines, and grants for states operating at the lowest staffing capacity.
+
+## **Conclusion**
+The comparison of best-staffed and worst-staffed states reveals substantial geographic differences in total nursing hours available to residents. While some states operate with strong staffing infrastructures, others rely on significantly leaner care models that may compromise resident safety and compliance performance. These findings underscore the need for targeted, state-specific workforce interventions and reinforce the importance of using HPRD levels as a key national benchmark for long-term care quality.
 
 ![](Q7_regional_skill_mix_grouped.png)
 ***
