@@ -174,6 +174,51 @@ This national benchmark helps stakeholders understand overall staffing sufficien
 
 ***
 
+## **Key Insight**
+**National average HPRD (Q2 2024):**
+
+**RN: 0.46 HPRD**
+**LPN: 0.79 HPRD**
+**CNA: 2.11 HPRD**
+**Total (all nursing roles): 7.69 HPRD**
+**CNAs** provide the majority of direct resident care, contributing more than 2.1 hours per resident per day — roughly triple the combined RN and LPN hours.
+
+**RN** coverage is the lowest by a substantial margin, reflecting persistent national RN shortages in long-term care.
+
+The national total HPRD of 7.69 is above basic historical minimums but suggests a lean staffing model where RN clinical oversight is limited.
+
+Professional interpretation (stakeholder friendly)
+The national staffing mix shows a system that relies heavily on CNAs for hands-on care while RNs are providing limited direct hours. This distribution is indicative of:
+Operational trade-offs: facilities are prioritizing coverage and direct assistance (CNA hours) over higher-skill RN hours, likely for cost and supply reasons.
+Clinical risk concentration: limited RN time per resident may reduce opportunities for proactive clinical assessment, care-plan updates, and early intervention for deteriorating residents.
+Workforce pressure: CNAs carry a significant workload which increases the risk of burnout, staff turnover, and variability in care quality.
+These national averages establish a neutral benchmark that should be used to compare states, regions, and individual facilities to detect meaningful under- or over-staffing patterns.
+
+## **Recommendations (actionable, prioritized)**
+Increase RN coverage where feasible
+
+Target a phased RN staffing uplift in facilities that fall materially below the national RN average. Even modest increases in RN HPRD can reduce adverse events and hospital transfers.
+Short-term: hire part-time RNs or contract clinical supervisors for peak periods.
+Medium-term: invest in RN retention (career ladders, education stipends, schedule flexibility).
+Protect CNA capacity and reduce burnout risk
+
+Implement scheduling best practices (predictable shifts, limits on overtime) and formal workload monitoring.
+Introduce retention measures: competitive pay bands, recognition programs, and clear career progression to LPN/RN pathways.
+Use national averages as an operational benchmark
+
+Compare each facility and state to these national HPRD values to prioritize audits and targeted support.
+Flag facilities with low RN HPRD or extreme CNA:LPN:RN imbalances for immediate operational review.
+Measure outcomes tied to staffing changes
+
+Track key outcomes (falls, hospital transfers, medication errors, survey citations) before and after staffing interventions to quantify clinical and financial return on investment.
+
+## **Conclusion**
+The national HPRD profile shows adequate total nursing hours but a pronounced skills-mix imbalance with low RN presence and heavy reliance on CNAs. This creates both operational efficiencies and clinical vulnerabilities. Using the national averages as a baseline, Veritas Data Services recommends a combined approach: modest RN staffing increases, proactive CNA support and retention, plus data-driven targeting of facilities and states that fall short of safe staffing practice. These steps will better align staffing with quality objectives and reduce systemic risk.
+
+Notes for reporting and follow-up
+Use these national figures as the baseline for the next analyses: state comparisons, facility outlier detection, weekday/weekend splits, and staffing-versus-census correlations.
+When reporting to stakeholders, present RN, LPN, and CNA HPRD together with outcome indicators to make the case for targeted investment in clinical staffing.
+
 ## **Q2 How is the HPRD distribution structured nationwide?**
 
 This question examines the frequency distribution of the primary staffing metric, Total Hours Per Resident Day (HPRD), across all 14,564 facilities and 1.3 million daily records.
@@ -239,7 +284,7 @@ Facilities that fail Standard A but meet Standard B have adequate licensed staff
 Facilities that fail both A and B (~25.6%) represent the highest-risk group with inadequate licensed staffing overall.
 This pattern reveals a national staffing model heavily dependent on LPNs and CNAs, with RN availability forming the core vulnerability impacting quality and compliance.
 
-Recommendations
+## **Recommendations**
 Prioritize RN Recruitment & Retention
 
 Introduce differential pay, flexible scheduling, and float-pool programs.
@@ -263,7 +308,8 @@ Use National Compliance Rates as Benchmarks
 
 Compare states, regions, and individual facilities against these thresholds.
 Identify risk clusters and prioritize resource allocation ahead of audits.
-Conclusion
+
+## **Conclusion**
 The analysis reveals a structural imbalance in the U.S. nursing home staffing model:
 RN coverage is insufficient nationwide, with only one-quarter of facilities meeting the minimum expected RN oversight. While the majority meet combined RN+LPN staffing levels, this does not offset the clinical risks associated with inadequate RN presence.
 
