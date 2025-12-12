@@ -714,26 +714,81 @@ Question 11 highlights a small yet important subset of facilities whose staffing
 
 Monitoring staffing variability is a valuable quality-assurance tool. By identifying and addressing inconsistent patterns early, organizations can improve workforce reliability, reduce operational risks, and ultimately enhance resident outcomes.
 
-## **Q12 How strongly is resident census related to staffing levels?**
+## **Q12.	How strongly is Census correlated with HPRD??**
 
 This question examines the correlation between a facility's average resident **Census** (number of residents) and its average **Total HPRD** (staffing level).
 
 ![](q12_census_vs_hprd_scatter_trend_colored.png)
 ***
 
-#### Key Insight
-- **Overall Correlation:** There is a **very weak, near-zero correlation** ($r = -0.01$) between a facility's average census and its average Total HPRD. This means facilities with high census are **not** consistently providing higher staffing (HPRD), and facilities with low census are **not** consistently providing lower staffing.
-- **The Ideal:** Ideally, HPRD should be independent of census, as it measures hours *per resident*. Staffing should scale with the number of residents, making HPRD constant. The near-zero correlation suggests that for most facilities, this is the case.
+## **What We Did**
+This analysis examines whether the number of residents in a facility (Census) influences the average nursing hours provided per resident per day (HPRD). Understanding this relationship helps determine whether staffing levels scale appropriately as resident load changes.
 
-#### Professional interpretation (stakeholder friendly)
-This finding provides a vital quality check on the PBJ system. The lack of a strong correlation confirms that **HPRD is a robust metric** that effectively normalizes for facility size. The staffing metric is working as intended, allowing stakeholders to compare a 200-bed facility to a 50-bed facility accurately based on HPRD.
+**Step-by-Step Process**
+1. Selected the Key Variables
+We focused on:
 
-### Recommendations
-1. **Continue Using HPRD:** Rely on HPRD as the primary metric for comparative analysis, as it is size-normalized and unbiased by the census volume.
-2. **Focus on Outliers (Q13):** The next step is to specifically isolate the facilities where staffing *does not* scale properly with census—the high-risk outliers.
+Census: Number of residents in the facility on a given day
+HPRD_Total: Total nursing hours per resident per day
+These two variables must be numeric, non-negative, and complete. We verified datatypes, checked for missing values, and confirmed realistic ranges.
 
-#### Conclusion
-The HPRD metric is robustly independent of facility size, allowing for fair and accurate comparison of staffing quality across the U.S. nursing home sector.
+2. Measured the Relationship Using Pearson Correlation
+To quantify how census and staffing intensity move together, we used the Pearson correlation coefficient, a statistical measure that tells us:
+
++1.0 → perfect positive relationship
+0.0 → no relationship
+–1.0 → perfect negative relationship
+A value close to zero means census and HPRD are not meaningfully connected.
+
+3. Computed the Correlation
+The correlation between Census and HPRD_Total was:
+
+** Correlation = –0.185**
+This represents a very weak negative relationship.
+
+4. Visualized the Relationship
+We plotted a scatter chart (sampled for performance) with a trendline, coloring facilities by size:
+
+Blue: Small/medium facilities (≤80th percentile census)
+Blood-red: Large facilities (Top 20% census)
+This helped reveal whether larger facilities behaved differently.
+
+**What We Found**
+The scatterplot shows a flat, slightly downward trendline.
+The correlation of –0.185 indicates that as census increases, HPRD decreases only slightly — and the relationship is extremely weak.
+Large facilities (blood-red points) follow the same pattern as small/medium facilities.
+This suggests that facilities generally maintain similar HPRD levels regardless of population size.
+Insight
+Census and HPRD show almost no meaningful relationship. With a correlation of –0.185, the data suggests that facilities do not significantly adjust staffing per resident as their census increases.
+
+In practice, this means:
+
+Facilities appear to maintain relatively stable HPRD levels, even as resident counts grow.
+Larger facilities may distribute staff over more residents, resulting in a slightly lower HPRD, but the effect is minimal.
+Staffing intensity (HPRD) is more influenced by internal policies, scheduling standards, or staffing models than by census volume alone.
+For shareholders, this indicates that resident load does not strongly drive staffing behavior, and HPRD is largely independent of daily census fluctuations.
+
+**Recommendation**
+Facilities should evaluate whether their staffing models are responsive enough to census changes. Key considerations:
+
+Review staffing elasticity:
+Ensure staffing plans adjust appropriately when census grows or shrinks.
+
+Monitor HPRD stability at higher census levels:
+Large facilities may risk slight under-staffing as resident numbers rise.
+
+Establish minimum HPRD safeguards:
+Prevent staffing dilution even during high census periods.
+
+Evaluate scheduling practices:
+Ensure resource allocation remains adequate across variable census levels.
+
+Consistency in HPRD is positive, but insufficient adjustment during census surges can pose care-quality risks.
+
+**Conclusion**
+Census and HPRD show a very weak negative relationship, indicating that facilities generally maintain similar per-resident staffing levels regardless of size. While this consistency can be positive, it also means that higher census does not automatically trigger proportional staffing increases.
+
+Monitoring this relationship is important for operational planning, risk management, and regulatory readiness. Ensuring appropriate staffing at all census levels helps protect resident care quality and supports compliance expectations.
 
 
 ## **Q13 Which facilities have high resident census but low staffing (High-Risk)?**
