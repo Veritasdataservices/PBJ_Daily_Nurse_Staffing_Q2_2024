@@ -437,25 +437,57 @@ This question aims to analyze how nursing staffing levels vary by region in the 
 
 ***
 
-#### Key Insight
+## **Key Insight**
+Clear regional differences exist in nursing staffing across the U.S., particularly in RN and CNA coverage.
 
-- **Regional Ranking (Total HPRD):**
-    1. **West:** 8.52 HPRD
-    2. **Northeast:** 8.35 HPRD
-    3. **Midwest:** 7.57 HPRD
-    4. **South:** 7.15 HPRD
-- **RN Staffing:** The West and Northeast regions consistently lead in RN HPRD, indicating a stronger clinical structure.
-- **South Deficit:** The South significantly trails all other regions in both Total HPRD and RN HPRD, confirming that the most acute staffing challenges are concentrated in this area. The South’s Total HPRD is 16% lower than the West’s.
+The West region reports the strongest overall staffing balance, driven by notably higher CNA hours (2.45 HPRD) and strong RN/LPN support.
 
-#### Professional interpretation (stakeholder friendly)
-This regional view confirms that staffing challenges are often **systemic and regional**, not isolated to a few states. The South faces the largest, most pervasive workforce and resource deficit. This is likely due to long-standing lower public funding, reduced wage competitiveness, and fewer state-level regulations imposing staffing floors. This analysis strongly supports a regionally differentiated approach to federal policy, funding allocation, and workforce development.
+The Northeast maintains the highest LPN coverage (0.81 HPRD) and relatively strong CNA hours (2.14 HPRD), reflecting more structured skill-mix models.
 
-### Recommendations
-1. **Prioritize Federal Workforce Investments in the South:** Focus grants, educational pipeline programs, and recruitment incentives on the Southern region to address its chronic staffing deficit.
-2. **Regional Peer Benchmarking:** Encourage Midwest and Southern facilities to model staffing and compensation strategies after the Northeast and West to gradually close the care gap.
+The Midwest shows a balanced but moderate profile, with CNA hours at 2.04 HPRD but lower RN and LPN coverage compared to coastal regions.
 
-#### Conclusion
-The regional analysis provides compelling evidence of a fundamental geographic divide in nursing home staffing capacity, with the Southern US facing the greatest systemic challenge. Future policy and operational strategies must be designed with this regional context in mind to achieve equitable national staffing standards.
+The South has the lowest RN hours (0.36 HPRD) among U.S. regions and heavier reliance on LPNs and CNAs, signaling potential challenges in clinical oversight and care management.
+
+Territory (Puerto Rico) remains an extreme outlier: RN hours are exceptionally high (3.29 HPRD) while CNA hours are 0.00, indicating a fundamentally different staffing model that is not comparable to U.S. state regions.
+
+Professional Interpretation (Stakeholder-Friendly)
+The data suggests regional staffing models are shaped by labor markets, wage structures, and state-level regulations.
+
+Western states tend to invest more in **CNA** labor, which supports daily resident care, contributing to stronger overall Total HPRD.
+
+Northeastern states utilize a more **LPN**-heavy model, possibly reflecting union structures, higher regulatory expectations, or more stable workforce pipelines.
+
+Southern states’ low RN availability may create risk in clinical assessments, care planning, and oversight—areas where RN judgment is essential.
+
+Midwestern states show stable but modest coverage, reflecting tight labor conditions but consistent **CNA** availability.
+
+Territory **(PR)** should be excluded from regulatory benchmarking due to completely different workforce structures (no **CNAs**, extremely high **RN** ratios).
+
+## **Recommendations**
+Strengthen **RN** Workforce in the South
+
+Prioritize **RN** recruitment incentives, differential pay, and RN transition programs.
+
+Facilities may require targeted CMS support to stabilize clinical leadership capacity.
+
+Model **CNA** Workforce Practices from the West
+
+Western states demonstrate the strongest **CNA** labor pipeline; these practices can inform national CNA recruitment, training, and retention programs.
+
+Expand **LPN**-to-**RN** Upskilling Pathways in **High-LPN** Regions (Northeast & South)
+
+Structured **LPN**-to-**RN** programs could rebalance clinical oversight gaps and expand the supervisory workforce.
+
+Use Regional Averages as a CMS Risk Indicator
+
+Regions significantly below national benchmarks in **RN** coverage (South) should be flagged for enhanced oversight in inspections, care planning, and staffing compliance.
+
+Exclude Puerto Rico from Standard Comparisons
+
+Its unique staffing structure would distort U.S. regional averages and should be analyzed separately.
+
+## **Conclusion**
+Regional staffing analysis reveals deep structural differences in nursing labor distribution across the United States. The West offers the strongest overall staffing support, while the South faces clear RN shortages that may impact clinical quality and outcomes. The Northeast maintains the most balanced professional mix with strong LPN and CNA contributions, and the Midwest remains stable though modest in intensity. Territory results highlight non-comparable models that require separate evaluation. These findings provide essential context for workforce planning, CMS benchmarking.
 
 ## **Q8 How does total staffing change day-by-day throughout Q2?**
 
