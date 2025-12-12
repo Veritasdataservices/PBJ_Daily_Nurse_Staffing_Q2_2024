@@ -798,29 +798,93 @@ This question identifies facilities where **high resident volume** is paired wit
 ![](q13_high_census_low_staffing_scatter.png)
 ***
 
-#### Key Insight
-- **Methodology:** High-risk facilities are defined as those that meet *both* criteria:
-    1. Average Census is in the top 25th percentile (a large facility).
-    2. Average HPRD is in the bottom 25th percentile (low staffing).
-- **Result:** Approximately **750 facilities** nationwide fall into this high-risk quadrant. These facilities are large in operation but operate on extremely lean staffing models.
+## **What We Did**
+This question aims to identify facilities whose resident load (Census) is high while their staffing intensity (measured by Hours Per Resident Per Day — HPRD) is low. Such facilities may be at risk of understaffing, which can impact quality of care and regulatory compliance.
 
-#### Professional interpretation (stakeholder friendly)
-This list of **750 facilities** represents a critical set of targets. Large facilities with low staffing levels face the highest probability of:
-- **Overburdened Staff:** High patient-to-staff ratios leading to burnout.
-- **Clinical Oversight Failure:** The sheer volume of residents overwhelms the low RN coverage.
-- **Systemic Citations:** Regulatory auditors are more likely to find deficiencies in high-volume, low-staffing environments.
+To answer this, we performed the following steps:
 
-This finding provides a clear, high-priority list for regulators and corporate teams seeking to mitigate immediate clinical and financial risk.
+1. Calculated Facility-Level Averages
+PBJ data is recorded daily, so to ensure accuracy we aggregated results to the facility level.
+For each facility, we computed:
 
-### Recommendations
-1. **Mandatory Staffing Review:** These 750 facilities must undergo a mandatory review of their operating budgets and staffing assignments to immediately increase HPRD.
-2. **Focus on RN Ratio:** The first goal should be to increase the RN hours per resident ratio to ensure clinical decision-making is sufficient for the high census volume.
+**Average Census** = Mean number of residents across the quarter
+**Average HPRD_Total** = Mean total nursing hours delivered per resident per day
+2. Defined “High Census” Using Percentiles
+To avoid arbitrary cutoffs, we used a statistically objective threshold:
 
-#### Conclusion
-High-volume, low-staffing facilities represent a high-priority risk cluster. Targeted intervention at these 750 facilities will have the most significant impact on improving resident safety across the large census volume they serve.
+**High Census** = Facilities in the top 20% of average census
+This reflects facilities with significantly larger resident populations relative to peers.
+
+3. Defined “Low Staffing” Using Percentiles
+Similarly, we defined:
+
+**Low Staffing** = Facilities in the bottom 20% of average HPRD
+This method ensures that “low staffing” is determined relative to national distribution, not assumptions.
+
+4. Identified Facilities Meeting BOTH Conditions
+A facility is flagged only if:
+
+**Its average census** is ≥ 80th percentile, and
+**Its average HPRD** is ≤ 20th percentile
+These facilities represent potential understaffing risk: high resident demand with comparatively low staffing levels.
+
+**What We Found**
+Total facilities analyzed: 14,564
+Facilities with high census and low staffing: 677
+This represents 4.65% of all facilities in the dataset.
+Flagged facilities typically had:
+
+Average Census: ≥ approximately 104 residents (80th percentile)
+Average HPRD: ≤ approximately 6.43 hours per resident per day (20th percentile)
+These facilities appear as blood-red points on the scatterplot. Their position — high on the census axis but low on the HPRD axis — visually confirms the imbalance between resident load and staff availability.
+
+This pattern indicates that these facilities may be operating with staffing levels that do not scale proportionally with census, a situation associated with increased care pressure and regulatory scrutiny.
+
+## **Insight**
+A total of 677 facilities show a combination of high resident volume and low staffing intensity, placing them in a higher-risk category for potential understaffing. These facilities operate with larger populations but provide fewer nursing hours per resident compared to similar facilities nationally.
+
+This imbalance may reflect:
+
+Scheduling constraints
+Staffing shortages
+High reliance on fixed staffing patterns
+Limited elasticity in responding to census growth
+Operational inefficiencies or reporting inconsistencies
+From a resident-care perspective, this pattern may contribute to increased staff workload, reduced care time per resident, and higher clinical risk.
+
+From a regulatory perspective, sustained low HPRD among high-census facilities may draw attention in compliance reviews, especially given the emphasis on adequate staffing levels in CMS oversight.
+
+## **Recommendation**
+For the 677 flagged facilities, we recommend:
+
+Conduct a targeted staffing review
+Compare shift-level schedules against census patterns to ensure staffing adjusts appropriately to resident demand.
+
+Implement census-responsive staffing models
+Use dynamic scheduling or minimum staffing thresholds to prevent dilution of HPRD as census increases.
+
+Monitor HPRD against internal or state benchmarks
+Ensure adherence to minimum staffing expectations and maintain documentation for regulatory reviews.
+
+Evaluate staffing mix and reliability
+Investigate whether low HPRD is caused by absenteeism, high turnover, or low RN/CNA availability.
+
+Improve PBJ reporting quality where needed
+A small subset of facilities may require review of reporting completeness or accuracy.
+
+## **Conclusion**
+Question 13 identifies a meaningful subset of 677 facilities that have high census but comparatively low staffing, indicating potential understaffing risk. These facilities stand out clearly in the analysis and visualization, demonstrating a mismatch between resident load and nursing hours provided.
+
+Monitoring and addressing this imbalance is crucial for:
+
+Protecting resident safety
+Maintaining staff workload sustainability
+Strengthening operational oversight
+Supporting compliance with CMS staffing expectations
+This analysis provides a data-driven basis for targeted intervention and continuous staffing improvement.
 
 
-## **Q14 Are all Provider IDs (PROVNUM) consistently present and valid?**
+## **Q14.	Do facilities with missing Provider IDs (PROVNUM) differ in staffing?**
 
 This quality check verifies that the unique facility identifier (`PROVNUM`) is present and correctly formatted across all 1.3 million daily records.
 
