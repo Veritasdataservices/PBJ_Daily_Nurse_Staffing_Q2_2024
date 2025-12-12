@@ -136,7 +136,7 @@ Below are the key questions this analysis will answer. These questions are writt
 ### **15. Are there abnormal zeros, sudden jumps, or strange values?**
 (Such anomalies often reveal reporting errors.)
 
-### **16. Are some facilities reporting unrealistic staffing numbers?**
+### **16.Are some facilities reporting unrealistic values?**
 (We check for impossible or suspicious patterns.)
 
 # ADVANCED STAFFING ANALYTICS
@@ -1032,7 +1032,7 @@ Compliance readiness
 Overall confidence in the dataset
 This question underscores the importance of robust data integrity practices in healthcare staffing analytics.
 
-## **Q16 Are some facilities reporting unrealistic staffing numbers?**
+## **Q16.	Are some facilities reporting unrealistic values?**
 
 This quality check identifies facilities reporting HPRD figures so high that they are statistically impossible or highly suspicious of data entry errors. We use the 99th percentile as the extreme outlier threshold.
 
@@ -1044,20 +1044,92 @@ This quality check identifies facilities reporting HPRD figures so high that the
 
 ***
 
-#### Key Insight
+## **Process (what we did and why)**
+Scope & fields used
+We evaluated reporting at the facility level (grouping by provnum, provname, state) and looked only at operational staffing fields that reflect real day-to-day care:
 
-- **High Outlier Threshold:** The 99th percentile for Total HPRD is 12.5 hours. Facilities reporting average HPRD above this level (approximately 145 facilities) are flagged.
-- **Focus:** These outliers are less a risk to resident safety and more a risk to **data integrity**. An HPRD of 150 or 300 (which occurs in the raw data) is physically impossible and indicates a decimal-point error or an extra digit entry.
+total_hours (sum of all nursing hours reported for a facility-day)
+hprd_total (Hours Per Resident Per Day)
+RN_hours, LPN_hours, CNA_hours, Skilled_hours
+We excluded NA_hours (nurse-aide trainee hours) and MedAide_hours because zeros in those fields are expected for many facilities and would generate false alarms.
 
-#### Professional interpretation (stakeholder friendly)
-This small group of 145 facilities is crucial for internal data cleaning and model validation. These extreme outliers must be statistically neutralized (e.g., capped or excluded) for any advanced modeling (like correlation or prediction) to avoid skewing the results, but they must be documented for transparency.
+**Facility-level aggregation**
+For each facility we computed:
 
-### Recommendations
-1. **Statistical Capping:** For future modeling, cap the Total HPRD value at a realistic maximum (e.g., 20.0 HPRD) for high-outlier facilities.
-2. **Outlier Reporting:** Flag these facilities for their internal data quality team to investigate potential payroll system bugs or repeated data entry errors.
+max_total_hours — the single largest total_hours reported in Q2 2024
+max_hprd_total — the single largest hprd_total reported in Q2 2024
+zero_days_total_hours and zero_days_hprd — counts of days with total_hours == 0 or hprd_total == 0
+spike_days_total_hours and spike_days_hprd — counts of days exceeding IQR-based spike thresholds (see below)
+Outlier / spike detection method
+We used the Interquartile Range (IQR) method — a standard, robust statistic for outlier detection:
 
-#### Conclusion
-While rare, unrealistic staffing figures compromise the fidelity of national averages and advanced models. These facilities serve as targets for data quality improvement, not necessarily for clinical intervention.
+Calculate Q1 (25th percentile) and Q3 (75th percentile)
+IQR = Q3 − Q1
+Spike Threshold = Q3 + 1.5 × IQR
+This flags unusually large daily entries that fall well outside the central spread of the data.
+Facility classification rule (how we decided “unrealistic”)
+**A facility was flagged Unrealistic_Reporter = True if any of these applied:**
+
+max_total_hours > 12,000 (operationally improbable for a single day) OR
+max_hprd_total > 24 (exceeds hours in a day and practical limits) OR
+zero_days_total_hours > 3 (multiple days with zero total hours is a red flag) OR
+spike_days_total_hours > 5 OR spike_days_hprd > 5 (repeated spike days)
+Analytic terms — plain language explanations
+IQR (Interquartile Range) — the distance between the 25th and 75th percentiles. It captures the middle 50% of values and is used to measure normal spread while resisting extreme values.
+Spike Threshold (Q3 + 1.5×IQR) — a rule-of-thumb cutoff: values above this are statistical outliers and deserve investigation.
+HPRD (Hours Per Resident Per Day) — total nursing hours for a day divided by census; it expresses staffing intensity per resident in hours/day.
+Outlier / Unrealistic value — a reported number that is statistically and operationally implausible (for example, a daily staff-hours total that is physically impossible given 24 hours in a day).
+Key findings (from the dataset)
+Facilities analyzed: 14,564 (facility-level summary).
+Facilities flagged as Unrealistic Reporters: 2,067 (≈ 14.2% of facilities).
+IQR-based spike thresholds used (dataset):
+Total-hours spike threshold: ≈ 1,368.90 hours/day
+HPRD spike threshold: ≈ 11.69 hours/resident/day
+Extreme single-day values observed in the dataset:
+max(total_hours) = 28,158 hours (single-day record) — operationally impossible.
+max(hprd_total) = 386.16 hours/resident/day — mathematically impossible.
+Zero-records (dataset-level):
+total_hours == 0: 2,677 records
+hprd_total == 0: 2,522 records
+These zeros represent missing or incorrect submissions rather than realistic operations.
+Insight (professional & stakeholder-friendly)
+A significant minority of facilities (≈ 14.2%) in Q2 2024 report facility-level values that are statistically and operationally unrealistic. The anomalies fall into two clear groups:
+
+Impossible single-day totals — very large total_hours entries (e.g., 28,158 hours) and very high hprd_total values (e.g., 386.16 HPRD) that cannot occur in a 24-hour period. These are almost certainly reporting errors (for example, monthly totals uploaded as daily, duplicate entries, or data mapping issues).
+
+Repeated anomalies — facilities that have multiple spike days or multiple zero-days. Repeated spikes/zeros suggest systemic issues at the facility (workflow/configuration problems) rather than one-off mistakes.
+
+Both types of anomalies materially reduce confidence in PBJ-derived staffing metrics and, if left unaddressed, will distort compliance reviews, benchmarking, and any downstream analytics (staffing adequacy assessments, quality correlations, payments or audits).
+
+## **Recommendation (healthcare-grade, actionable)**
+Automated pre-submission validation
+Require facility systems to run validation checks before PBJ submission that flag:
+
+total_hours == 0 (for any non-zero census day)
+hprd_total == 0 (unless census = 0)
+total_hours above an operational cap (e.g., 12,000)
+hprd_total above a safe upper limit (e.g., 12–24 depending on state rules)
+Targeted follow-up & audit
+Prioritize outreach to the 2,067 flagged facilities for a light audit and data correction:
+
+Confirm whether large values were monthly totals or data-entry errors
+Request corrected PBJ files where appropriate
+Training and configuration checks
+Provide short, targeted training modules and configuration checklists to facilities that repeatedly trigger spikes or zeros (timekeeping export formats, file upload procedures, payroll-to-PBJ mapping).
+
+Implement routine monitoring dashboards
+Build an automated dashboard that:
+
+Shows top facilities by max_total_hours and max_hprd_total
+Tracks repeat offenders (spike days and zero-day counts)
+Sends alerts if a facility exceeds thresholds
+Document and enforce submission standards
+Standardize file formats and make a short validation guide mandatory with each PBJ submission — this reduces the most common human and system errors.
+
+## **Conclusion**
+The facility-level review confirms that some facilities are reporting unrealistic values, and this is not rare: roughly 1 in 7 facilities in the Q2 2024 dataset are flagged under our conservative, audit-ready rules. The errors we see (impossible daily hours, extreme HPRD, repeated spikes, and zero entries) are consistent with common PBJ reporting mistakes (monthly totals submitted as daily, duplicate rows, and misconfigured exports).
+
+Addressing this requires a mix of automated validation, targeted audits, and facility support/training. By implementing the recommendations above, organizations can substantially improve PBJ data integrity — which in turn increases the reliability of staffing analytics, strengthens compliance, and protects residents through better-informed staffing oversight.
 
 
 ## **Q17 Are some facilities substituting staff types?**
