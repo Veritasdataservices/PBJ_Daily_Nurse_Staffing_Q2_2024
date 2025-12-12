@@ -510,7 +510,7 @@ The weekend staffing deficit is a well-documented quality-of-care risk. Lower we
 #### Conclusion
 The Q2 2024 daily trend confirms a persistent, national operational weakness characterized by lower weekend staffing. This pattern must be addressed through targeted compensation and regulatory requirements to eliminate the 'weekend effect' on resident safety and quality of care.
 
-## **Q9 Do facilities staff differently on weekdays compared to weekends?**
+## **Q9 How does staffing differ between Weekdays vs Weekends??**
 
 This question quantifies the average difference in HPRD (Hours Per Resident Day) between weekdays (Monday-Friday) and weekends (Saturday-Sunday) to isolate the 'weekend effect.'
 
