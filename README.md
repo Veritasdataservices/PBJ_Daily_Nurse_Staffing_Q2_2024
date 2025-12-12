@@ -425,7 +425,16 @@ Allocate Funding and Training Resources Strategically Federal and state agencies
 ## **Conclusion**
 The comparison of best-staffed and worst-staffed states reveals substantial geographic differences in total nursing hours available to residents. While some states operate with strong staffing infrastructures, others rely on significantly leaner care models that may compromise resident safety and compliance performance. These findings underscore the need for targeted, state-specific workforce interventions and reinforce the importance of using HPRD levels as a key national benchmark for long-term care quality.
 
+## **Q7-Regional staffing patterns (Northeast, South, Midwest, West)**
+This question aims to analyze how nursing staffing levels vary by region in the United States. Using the census-based regional grouping (Northeast, South, Midwest, West), we will calculate regional averages for:
+
+**RN HPRD**
+**LPN HPRD**
+**CNA HPRD**
+**Total HPRD**
+
 ![](Q7_regional_skill_mix_grouped.png)
+
 ***
 
 #### Key Insight
