@@ -1,5 +1,5 @@
 # Veritas Data Services
-## PBJ Daily Nurse Staffing – Q2 2024 (CMS)
+## PBJ Daily Nurse Staffing-Q2 2024 (CMS)
 ### Project Introduction & Analysis Plan
 
 The Payroll-Based Journal (PBJ) Daily Nurse Staffing Q2 2024 dataset, published by the Centers for Medicare & Medicaid Services (CMS), provides facility-level daily staffing and census data for U.S. nursing homes. This dataset is essential for regulatory oversight, quality measurement, and staffing compliance evaluation.
@@ -53,7 +53,7 @@ After extraction and cleaning, the dataset contains:
 
 - Total Rows: 1,325,324
 - Total Columns: 33
-- Quarter Covered: 2024 Q2 (April 1 – June 30)
+- Quarter Covered: 2024 Q2 (April 1-June 30)
 - Facilities Represented: 14,564
 - Reporting Frequency: Daily per facility
 - Source: CMS PBJ Daily Nurse Staffing Data
@@ -76,7 +76,7 @@ These insights support decision-making for:
 - Staffing directors
 - Policy and regulatory teams
 
-# PBJ Daily Nurse Staffing — Q2 2024
+# PBJ Daily Nurse Staffing-Q2 2024
 ## Official Analysis Questions (Stakeholder-Friendly Version)
 
 Below are the key questions this analysis will answer. These questions are written in clear, non-technical language so that any reader including non-analysts can understand the purpose and value of each part of the study.
@@ -84,7 +84,7 @@ Below are the key questions this analysis will answer. These questions are writt
 # NATIONAL STAFFING LEVELS
 
 ### **1. What is the national average amount of nursing care each resident receives per day?**
-(We will calculate the Hours Per Resident Day — HPRD — for RN, LPN, CNA, and Total.)
+(We will calculate the Hours Per Resident Day-HPRD for RN, LPN, CNA, and Total.)
 
 ### **2. How are staffing levels distributed across all nursing homes nationwide?**
 (Are most facilities low, average, or high in the amount of care they provide?)
@@ -181,7 +181,7 @@ This national benchmark helps stakeholders understand overall staffing sufficien
 **LPN: 0.79 HPRD**
 **CNA: 2.11 HPRD**
 **Total (all nursing roles): 7.69 HPRD**
-**CNAs** provide the majority of direct resident care, contributing more than 2.1 hours per resident per day — roughly triple the combined RN and LPN hours.
+**CNAs** provide the majority of direct resident care, contributing more than 2.1 hours per resident per day-roughly triple the combined RN and LPN hours.
 
 **RN** coverage is the lowest by a substantial margin, reflecting persistent national RN shortages in long-term care.
 
@@ -346,7 +346,7 @@ Understanding these state-level patterns is essential for organizations seeking 
 
 ## **Recommendations**
 Benchmark low-HPRD states for targeted operational support
-Identify underlying causes—workforce shortages, funding gaps, wage competitiveness, or facility-level strain—and apply focused interventions such as temporary staffing support or wage incentives.
+Identify underlying causes—workforce shortages, funding gaps, wage competitiveness, or facility-level strain and apply focused interventions such as temporary staffing support or wage incentives.
 
 Study high-HPRD states to extract best practices
 Analyze RN/LPN/CNA mix strategies, recruitment models, state-level wage policies, and retention programs that allow these states to maintain stronger staffing capacity.
