@@ -216,58 +216,58 @@ This analysis evaluates national compliance against CMS standards. We use the **
 
 ***
 
-**Compliance Standards Evaluated:**
-- **Standard A (RN Minimum):** 0.55 RN HPRD (Registered Nurse hours per resident per day)
-- **Standard B (Licensed Minimum):** 2.45 RN + LPN HPRD (Combined Registered Nurse and Licensed Practical Nurse hours per resident per day)
+## **Key Insight**
+**CMS evaluates facilities using two staffing expectations:**
 
-#### Key Insight
+**Standard A: RN HPRD ≥ 0.55**
+(Minimum registered nurse coverage for safe clinical oversight)
 
-The analysis reveals a critical structural weakness: **RN coverage is the greatest vulnerability** in the national staffing model.
+**Standard B: RN + LPN HPRD ≥ 1.0**
+(Minimum licensed nursing coverage per resident per day)
 
-| Compliance Status | Facilities (Count) | Facilities (%) | Interpretation |
-| :--- | :--- | :--- | :--- |
-| **Meet Both A & B** | 3,760 | **25.8%** | **Compliant:** Meets all licensed staffing expectations. |
-| **Fail Standard A Only** | 7,160 | **49.2%** | **RN Deficient:** Meets combined licensed staff, but lacks adequate RN clinical oversight. |
-| **Fail Standard B Only** | 120 | **0.8%** | **LPN Deficient:** Meets RN, but falls short on total licensed staff. |
-| **Fail Both A & B** | 3,724 | **25.6%** | **High Risk:** Fails both RN and combined licensed staff expectations. |
+Q3 2024 National Results
 
-- Only **25.8%** of facilities nationwide meet the expected RN HPRD standard (Standard A).
-- Nearly **50%** of facilities (49.2%) fail the RN minimum but meet the combined licensed standard, meaning they rely heavily on LPNs to compensate for RN shortages.
-- Facilities that **fail Standard A but meet Standard B** have adequate licensed staff but **insufficient clinical decision-making capacity**.
-- Facilities that **fail both A and B** (~25.6%) represent the highest-risk group with inadequate licensed staffing overall.
+26.45% of facilities meet Standard A
+→ Only about one in four homes provide the minimum RN coverage.
+74.42% meet Standard B
+→ Nearly three out of four meet licensed nursing requirements when RN and LPN hours are combined.
+Interpretation for Stakeholders
 
+RN staffing is the primary national gap. RN hours are consistently low across facilities, limiting clinical oversight capacity.
+LPN staffing compensates for RN shortages. Many facilities only meet Standard B because LPN hours are strong enough to elevate total licensed coverage.
+Facilities that fail Standard A but meet Standard B have adequate licensed staff but insufficient clinical decision-making capacity.
+Facilities that fail both A and B (~25.6%) represent the highest-risk group with inadequate licensed staffing overall.
 This pattern reveals a national staffing model heavily dependent on LPNs and CNAs, with RN availability forming the core vulnerability impacting quality and compliance.
 
-### Recommendations
+Recommendations
+Prioritize RN Recruitment & Retention
 
-1. **Prioritize RN Recruitment & Retention**
- - Introduce differential pay, flexible scheduling, and float-pool programs.
- - Focus retention strategies on states and facility clusters with the lowest RN averages.
+Introduce differential pay, flexible scheduling, and float-pool programs.
+Focus retention strategies on states and facility clusters with the lowest RN averages.
+Use Standard A as a Clinical Quality Flag
 
-2. **Use Standard A as a Clinical Quality Flag**
- - Facilities below 0.55 RN HPRD should undergo elevated internal monitoring:
- - medication administration
- - care-plan updates
- - incident response capability
+Facilities below 0.55 RN HPRD should undergo elevated internal monitoring:
+medication administration
+care-plan updates
+incident response capability
+Strengthen LPN–RN Team Structures
 
-3. **Strengthen LPN–RN Team Structures**
- - Even in Standard-B-compliant facilities:
- - Implement scheduled RN oversight rounds.
- - Ensure LPN delegation and documentation practices adhere to regulatory expectations.
+Even in Standard-B-compliant facilities:
+Implement scheduled RN oversight rounds.
+Ensure LPN delegation and documentation practices adhere to regulatory expectations.
+Intervene Rapidly in Dual-Fail Facilities (Fail A & B)
 
-4. **Intervene Rapidly in Dual-Fail Facilities (Fail A & B)**
- - These facilities are most vulnerable to CMS citations.
- - Provide temporary RN support, targeted staffing plans, and real-time monitoring.
+These facilities are most vulnerable to CMS citations.
+Provide temporary RN support, targeted staffing plans, and real-time monitoring.
+Use National Compliance Rates as Benchmarks
 
-5. **Use National Compliance Rates as Benchmarks**
- - Compare states, regions, and individual facilities against these thresholds.
- - Identify risk clusters and prioritize resource allocation ahead of audits.
+Compare states, regions, and individual facilities against these thresholds.
+Identify risk clusters and prioritize resource allocation ahead of audits.
+Conclusion
+The analysis reveals a structural imbalance in the U.S. nursing home staffing model:
+RN coverage is insufficient nationwide, with only one-quarter of facilities meeting the minimum expected RN oversight. While the majority meet combined RN+LPN staffing levels, this does not offset the clinical risks associated with inadequate RN presence.
 
-### Conclusion
-
-The analysis reveals a structural imbalance in the U.S. nursing home staffing model: **RN coverage is insufficient nationwide**, with only one-quarter of facilities meeting the minimum expected RN oversight. While the majority meet combined RN+LPN staffing levels, this does not offset the clinical risks associated with inadequate RN presence.
-
-Addressing RN shortages represents the **most impactful pathway** toward improving resident safety, reducing citations, and enhancing quality outcomes. These findings set a clear foundation for the next stages of analysis,including state-level comparisons, regional trends, and identification of high-risk facility groups.
+Addressing RN shortages represents the most impactful pathway toward improving resident safety, reducing citations, and enhancing quality outcomes. These findings set a clear foundation for the next stages of analysis,including state-level comparisons, regional trends, and identification of high-risk facility groups.
 
 ## **Q4 What is the Average HPRD by State?**
 
