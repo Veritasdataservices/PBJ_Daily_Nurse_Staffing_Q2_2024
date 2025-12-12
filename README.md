@@ -42,12 +42,12 @@ Both notebooks are included so that stakeholders, auditors, and collaborators ca
 * **Review all transformations** from raw CMS PBJ data to final insights
 * **Inspect code quality**, methodological consistency, and analytic rigor
 
-## References
+# References
 - Veritas Data Services. *PBJ Daily Nurse Staffing – Q2 2024 Cleaning Pipeline.* Jupyter Notebook.  
 - Veritas Data Services. *PBJ Daily Nurse Staffing – Q2 2024 Full Analysis & Visualization.* Jupyter Notebook.  
 - Centers for Medicare & Medicaid Services (CMS). Payroll-Based Journal (PBJ) Daily Nurse Staffing Data, Q2 2024 Release.
 
-## Dataset Overview
+# Dataset Overview
 
 After extraction and cleaning, the dataset contains:
 
@@ -65,7 +65,7 @@ The dataset includes:
 - Employee vs Contract hours
 - Derived metrics including Total Hours and HPRD (Hours per Resident Day)
 
-## Analysis Framework
+# Analysis Framework
 
 The analysis is organized into 20 professional, stakeholder-focused questions designed to capture staffing sufficiency, state-level patterns, outliers, workforce mix, and operational risks.
 
@@ -373,30 +373,17 @@ The skill mix is presented as the proportion of total HPRD contributed by each r
 ![](Q5_skill_mix_by_state_horizontal_stacked_descending.png)
 ***
 
-#### Key Insight
-- **National Average Mix:** CNA hours dominate, representing approximately **59%** of total direct nursing HPRD. RNs provide the lowest proportion of care, reinforcing the finding from Q3 that RN staffing is the national vulnerability.
-- **State Variability:**
-    - States like Alaska (AK), Oregon (OR), and Hawaii (HI) demonstrate a higher RN skill mix, suggesting a more robust clinical oversight model.
-    - Conversely, several states, primarily in the South (e.g., LA, MS, AR), show a lower RN proportion and a higher LPN proportion, suggesting a staffing model that attempts to compensate for RN shortages with Licensed Practical Nurses.
-- **Substitution is not confirmed:** While the mix varies, this metric alone does not confirm role substitution (Q17 addresses this); it merely shows the structural composition of the daily workforce. High LPN reliance is observed in several states such as Arkansas, Oklahoma, and Louisiana, indicating compensation for RN shortages through increased LPN staffing.
+## **Key Insight**
+States show significant variation in RN–LPN–CNA skill mix, revealing different staffing models and care delivery strategies across the U.S. CNA hours dominate the skill mix in every state, consistently providing the largest share of direct resident care. RN coverage varies widely, from high levels in Alaska (1.65 HPRD) and D.C. (1.31), to much lower levels in states like Missouri (0.29) and Texas (0.28). LPN reliance is pronounced in several states such as Arkansas, Oklahoma, and Louisiana, indicating compensation for RN shortages through increased LPN staffing. These patterns suggest state-level differences in workforce availability, wage competitiveness, regulatory environments, and operational priorities.
 
-#### Professional interpretation (stakeholder friendly)
-The dominance of CNA hours reflects the nationwide reliance on paraprofessional caregivers for daily care tasks. While this is common, states with very low RN hours may face clinical oversight challenges, particularly around assessments, care planning, and acute change management.
+**Professional interpretation (stakeholder friendly)**
+The dominance of CNA hours reflects the nationwide reliance on paraprofessional caregivers for daily care tasks. While this is common, states with very low RN hours may face clinical oversight challenges, particularly around assessments, care planning, and acute change management. States with higher RN staffing (AK, DC, HI, OR) may possess stronger clinical infrastructures, enabling better monitoring and higher-quality decision-making. States leaning heavily on LPNs often do so due to RN shortages or financial constraints, which can create variability in clinical outcomes and increase regulatory risk. A lower RN proportion can impact: accuracy of clinical assessments medication management hospital transfer rates survey outcomes and deficiencies This skill-mix profile provides leadership with a clear view of where clinical vulnerabilities exist geographically.
 
-States with higher RN staffing (AK, DC, HI, OR) may possess stronger clinical infrastructures, enabling better monitoring and higher-quality decision-making.
+## **Recommendations**
+Strengthen RN capacity in low-RN states Implement RN recruitment incentives, differential pay, sign-on bonuses, and support for RN education pathways. Consider cross-state RN traveler pools for regions with persistent shortages. Conduct targeted LPN-to-RN upskilling programs States with high LPN density can benefit from structured RN transition programs to expand the clinical skill base. Monitor CNA workload stability States where CNA hours heavily compensate for nurse shortages may face burnout risks. Introduce workload balancing, retention initiatives, and well-being programs. Use skill-mix ratios as a proxy for risk assessment A low RN-to-total-hours ratio should trigger facility-level reviews of care plans, adverse events, and escalation practices. Share best practices from high-performing states Alaska, D.C., Hawaii, Oregon, and Delaware can serve as models for staffing stability, recruitment strategies, and clinical governance structures.
 
-States leaning heavily on LPNs often do so due to RN shortages or financial constraints, which can create variability in clinical outcomes and increase regulatory risk.
-
-A lower RN proportion can impact:
-- accuracy of clinical assessments
-- medication management
-- hospital transfer rates
-- survey outcomes and deficiencies
-
-This skill-mix profile provides leadership with a clear view of where clinical vulnerabilities exist geographically.
-
-### Recommendations
-Strengthen RN...
+## **Conclusion**
+The RN–LPN–CNA skill mix varies significantly across states, revealing structural differences in nursing workforce distribution and clinical capacity. CNA hours dominate nationwide, but RN presence—critical for clinical oversight—is uneven and often insufficient. States that rely heavily on LPNs may maintain operational continuity but risk gaps in higher-level clinical judgement. This analysis highlights where targeted investments, staffing interventions, and policy supports are most needed. These insights will directly inform upcoming questions that examine facility-level variation, census-adjusted staffing, and correlations between staffing patterns and quality outcomes.
 
 
 ## **Q6 Which states are the best and worst staffed overall?**
