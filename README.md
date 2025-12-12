@@ -219,7 +219,7 @@ Notes for reporting and follow-up
 Use these national figures as the baseline for the next analyses: state comparisons, facility outlier detection, weekday/weekend splits, and staffing-versus-census correlations.
 When reporting to stakeholders, present RN, LPN, and CNA HPRD together with outcome indicators to make the case for targeted investment in clinical staffing.
 
-## **Q2 How is the HPRD distribution structured nationwide?**
+## **Q2 How is the HPRD distribution across all facilities**
 
 This question examines the frequency distribution of the primary staffing metric, Total Hours Per Resident Day (HPRD), across all 14,564 facilities and 1.3 million daily records.
 
@@ -227,26 +227,37 @@ This question examines the frequency distribution of the primary staffing metric
 
 ***
 
+## **Key Insight**
+The national distribution of Total Hours Per Resident Per Day (HPRD) in Q2 2024 shows a strong and consistent pattern across U.S. nursing facilities. Most facility-days fall between 6 and 10 HPRD, with the highest concentration around 7–8 hours per resident per day. This confirms that while staffing levels vary by facility, the national system operates within a relatively predictable range.
 
-The distribution analysis reveals:
+The distribution is slightly right-skewed, meaning there are more facilities operating below 10 HPRD than above it. Very few facility-days exceed 12 HPRD, and extremely high values are rare, indicating that only a small number of facilities staff significantly above the national norm. The lower tail (0–3 HPRD) exists but represents a very small share of all facility-days, suggesting isolated operational disruptions, reporting anomalies, or exceptional circumstances rather than systemic under-staffing.
 
-- **Central Tendency and Skew:** The distribution is generally bell-shaped (Normal), slightly skewed right due to a small number of facilities reporting extremely high HPRD (often data entry errors or specialized care units).
-- **Core Operating Range:** The vast majority of facilities (the Interquartile Range, or IQR) operate between **6.43 and 8.53 HPRD**. This range represents the national standard deviation of daily care provision.
-- **Outliers and Risk:**
-    - The bottom 25% of facilities (below 6.43 HPRD) represent potential care risks and are the focus of Question 10 (Red Flags).
-    - The top 25% (above 8.53 HPRD) represent high-quality care providers or highly specialized facilities (Excellence List in Q18).
+Overall, the distribution reflects a stable industry-wide staffing pattern where most facilities provide a moderate level of daily care, with controlled variation across the sector.
 
-#### Key Insight
+**Professional Interpretation (Stakeholder-Friendly)**
+This distribution tells a clear national story:
+Facilities generally staff at levels that support baseline operational care but may lack flexibility for unexpected clinical or operational demands. The clustering around 7–8 HPRD suggests a standardized approach to daily staffing nationwide, influenced by historical norms, reimbursement structures, and workforce availability.
 
-The distribution confirms a generally consistent staffing pattern nationwide, with the **IQR (6.43 to 8.53 HPRD)** serving as the stable operational bandwidth for most facilities. Analysis of the tails of the distribution is crucial for identifying performance extremes, both risks and best practices.
+The right-skew indicates a small percentage of high-performing or high-resourced facilities providing enhanced staffing. These facilities may experience better clinical outcomes, lower turnover, and fewer deficiencies, underscoring the potential performance gap between average and top-tier providers.
 
-#### Recommendations
-1. **Target facilities below the 25th percentile (6.43 HPRD)** for immediate operational review, as these facilities deviate significantly from the national norm.
-2. **Flag facilities above the 95th percentile (>12.0 HPRD)** for data integrity checks; extremely high numbers may indicate reporting artifacts, although they could also represent highly specialized or acute care units.
-3. **Use the IQR as a relative performance metric** for broader system improvement.
-4. **Incorporate distribution analysis into state and facility scorecards.** A standardized national reference range allows regulators, operators, and investors to assess whether staffing fluctuations are normal, concerning, or exceptional.
+Meanwhile, the small pocket of low-HPRD days highlights potential risk zones. Even if infrequent, such dips can be early indicators of staffing instability—often preceding regulatory citations, quality issues, or increased resident safety incidents.
 
-#### Conclusion
+This national distribution therefore forms the foundation for detecting outliers, benchmarking states, and identifying facilities that consistently fall below expected staffing patterns.
+
+## **Recommendations (Actionable & Prioritized)**
+Use the national peak range (7–8 HPRD) as a benchmark for facility evaluations.
+Facilities consistently below this range should undergo operational review to understand staffing constraints or systemic inefficiencies.
+
+Investigate repeated low-HPRD days (<4 HPRD).
+While rare, recurring low staffing days may signal compliance risks, workforce shortages, or reporting errors that require intervention.
+
+Highlight top-performing high-HPRD facilities as models.
+These facilities can inform workforce planning, staffing structure, and resource allocation strategies for broader system improvement.
+
+Incorporate distribution analysis into state and facility scorecards.
+A standardized national reference range allows regulators, operators, and investors to assess whether staffing fluctuations are normal, concerning, or exceptional.
+
+## **Conclusion**
 The Q2 2024 HPRD distribution illustrates a stable national staffing landscape anchored around consistent daily care levels. Moderate variability is normal, but deviations on either end of the distribution offer meaningful insight into facility performance. By using this distribution as a national benchmark, stakeholders can more accurately evaluate staffing adequacy, target support where needed, and identify both risks and best practices across the long-term care sector.
 
 This marks the foundation for deeper analyses in the following questions, including state comparisons, facility outlier identification, weekday–weekend patterns, and census-adjusted staffing evaluations.
