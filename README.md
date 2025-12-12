@@ -571,28 +571,69 @@ Strengthen weekend RN coverage Implement staggered scheduling, weekend different
 
 This question identifies facilities that are national outliers in *low* staffing, creating a preliminary **National Red Flag Watch List**. We define "consistently low staffing" as facilities with an average Total HPRD below the national 10th percentile (6.0 HPRD).
 
-#### Key Insight
+## **Insight**
+The national facility-level analysis for Q2 2024 reveals significant variation in average daily nursing hours, with a clear subset of facilities operating far below acceptable staffing expectations. Using three validated thresholds — the CMS historical minimum (HPRD), the modern minimum expectation (HPRD), and national percentile-based cutoffs (percentile and percentile ) facilities were classified into defined risk categories:
 
-- **Identification:** Approximately 1,456 facilities (the bottom 10% of the distribution) have an average HPRD below 6.0 hours.
-- **Geographic Concentration:** Low-staffing facilities are heavily concentrated in the Southern and Midwest US regions (consistent with Q7).
-- **RN/CNA Mix:** These red-flag facilities generally display HPRD levels that are inadequate across all roles, with RN HPRD often falling near or at zero, indicating a profound lack of clinical oversight.
+**1. Critical Red-Flag Facilities (HPRD < 4.1)**
+Facilities under the CMS historical minimum are operating at dangerously low staffing levels, raising immediate concerns for resident safety and regulatory non-compliance.
 
-#### Professional interpretation (stakeholder friendly)
-This list is the highest priority for regulatory intervention. These facilities are operating at a level of care provision that is statistically indefensible and highly likely to result in care deficiencies and poor resident outcomes. This analysis provides a data-driven, objective list for resource allocation and immediate compliance checks.
+Texas, Illinois, and Missouri recorded the highest number of critically understaffed facilities, with Texas alone accounting for 316 red-flag homes.
+States such as New York, Georgia, Ohio, Virginia, Indiana, and Michigan also show clusters of facilities falling below this threshold.
+Some facilities report average staffing of less than 1.0 HPRD, indicating severe systemic operational issues.
+**2. Understaffed Facilities (HPRD < 5.0)**
+Using a more modern staffing expectation, Illinois, Missouri, and Texas again appear as the most impacted states.
 
-### Recommendations
-1. **Immediate Intervention:** Regulatory teams should prioritize audits and compliance checks for all facilities on this list.
-2. **Systemic Review:** Corporate owners with multiple facilities on this list require a systemic, enterprise-wide review of their staffing and financial models.
-3. **Link to Adverse Events:** Future analysis should cross-reference this list with CMS deficiency and hospitalization data to quantify the correlation between low staffing and poor outcomes.
+This tier captures homes not critically unsafe, but still functioning below expected care capacity, indicating operational strain.
+Illinois (77), Missouri (52), and Texas (41) lead nationally.
+Several additional states (e.g., North Carolina, Kansas, Georgia, Minnesota) show moderate but meaningful understaffing burdens.
+**3. National Distribution of Risk Levels**
+75% of facilities fall in the Safe Zone
+15% fall into Moderate Risk
+10% are Critical Red Flags and require urgent review
+This pattern highlights a national system where most facilities meet minimum expectations, but a non-trivial number pose immediate risk, concentrated heavily in specific states.
 
-#### Conclusion
-The identification of 1,456 consistently low-staffed facilities provides a clear, actionable target for improving nationwide quality of care. This multi-tiered approach provides policymakers, operators, and regulators with a clear, actionable framework for intervention:
+## **Recommendation**
+1. Prioritize Immediate Regulatory Review for Critical Red-Flag Facilities
+Facilities with 
+ should be fast-tracked for:
 
-* **Critical red-flag facilities** require immediate corrective action.
-* **Moderately understaffed facilities** require proactive support.
-* **State-level trends** highlight where systemic issues are most urgent.
+Onsite inspection
+Temporary staff augmentation
+Compliance monitoring
+Operational audits
+These facilities represent the highest potential vulnerability to resident harm.
 
-Overall, these findings reinforce the importance of **consistent staffing monitoring and targeted resource allocation** to protect resident safety and improve nationwide nursing home performance.
+2. Establish State-Level Targeted Support Programs
+States with the highest concentration of critically low-HPRD facilities particularly Texas, Illinois, and Missouri — would benefit from targeted interventions such as:
+
+Staffing grants or emergency workforce pools
+Regional nurse recruitment incentives
+Administrative oversight partnerships
+3. Use the <5.0 HPRD Group as Early Warning Signals
+Facilities between 
+ and 
+ HPRD should enter a preventive improvement pathway, including:
+
+Staffing forecasting support
+Operational efficiency assessments
+Workforce scheduling optimization
+Enhanced reporting oversight
+This proactive approach prevents facilities from sliding into crisis-level staffing.
+
+4. Integrate Percentile Thresholds in Ongoing Monitoring
+Percentiles (
+ and 
+) give a nationally normalized benchmark, enabling CMS, state regulators, and facility owners to identify emerging staffing issues before they become regulatory failures.
+
+## **Conclusion**
+The analysis identifies a clear pattern: while most facilities operate within acceptable staffing ranges, a significant minority are dangerously understaffed, disproportionately concentrated in certain states. Using multiple validated thresholds ensures that both critical failures and incipient risks are accurately identified.
+
+This multi-tiered approach provides policymakers, operators, and regulators with a clear, actionable framework for intervention:
+
+Critical red-flag facilities require immediate corrective action.
+Moderately understaffed facilities require proactive support.
+State-level trends highlight where systemic issues are most urgent.
+Overall, these findings reinforce the importance of consistent staffing monitoring and targeted resource allocation to protect resident safety and improve nationwide nursing home performance.
 
 ## **Q 11. Which facilities show unusual staffing variability?**
 
