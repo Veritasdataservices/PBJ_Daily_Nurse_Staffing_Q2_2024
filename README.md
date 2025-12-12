@@ -333,27 +333,31 @@ This question aims to determine how nursing staffing levels vary across the Unit
 ![](Q4_avg_hprd_by_state_desc.png)
 ***
 
-#### Key Insight
+## **Key Insight**
+Average Total HPRD varies sharply across states, ranging from 6.72 to 13.33, showing wide differences in staffing capacity and care delivery models across the country.
+Alaska (13.33), Puerto Rico (10.77), Oregon (10.08), and Washington D.C. (9.98) report the highest Total HPRD, indicating stronger staffing structures and higher nursing coverage per resident.
+States such as Missouri (6.72), Texas (6.74), Illinois (6.88), and Georgia (7.13) operate with leaner staffing models, which may reflect shortages in the nursing workforce, financial constraints, or regional policy differences.
+Med Aide and Nurse Aide Trainee roles reported zero hours nationwide, meaning Total HPRD reflects only RN, LPN, and CNA contributions in Q2 2024.
+Professional interpretation (stakeholder friendly)
+Higher-HPRD states demonstrate consistent investment in nursing resources, which may translate to stronger clinical oversight, lower care delays, and better resident outcomes.
+Lower-HPRD states may face structural challenges in staffing, including wage competitiveness, workforce supply issues, or regulatory pressures that limit staffing expansion.
+These variations create geographic inequities in resident experience and may influence quality ratings, hospitalization rates, and CMS compliance risk.
+Understanding these state-level patterns is essential for organizations seeking to allocate resources, target support, or identify systemic vulnerabilities across their networks.
 
-National average Total HPRD is **7.69 hours**. There is a significant and persistent disparity in staffing levels across states, with the top-performing state providing nearly **40% more care** than the lowest-performing state.
+## **Recommendations**
+Benchmark low-HPRD states for targeted operational support
+Identify underlying causes—workforce shortages, funding gaps, wage competitiveness, or facility-level strain—and apply focused interventions such as temporary staffing support or wage incentives.
 
-- **Highest Staffing States (Top 10):** Tend to cluster in the Western and Northeastern US (e.g., AK, OR, WA, HI, NY, MA), consistently operating above 9.0 Total HPRD.
-- **Lowest Staffing States (Bottom 10):** Are typically concentrated in the Southeast and South-Central US (e.g., LA, TX, OK, TN, AL), with multiple states operating below 7.0 Total HPRD.
-- **Variability:** The difference between the 90th percentile state and the 10th percentile state is **1.64 HPRD** (8.73 vs 7.09), a significant gap that directly correlates with potential quality of care differences.
+Study high-HPRD states to extract best practices
+Analyze RN/LPN/CNA mix strategies, recruitment models, state-level wage policies, and retention programs that allow these states to maintain stronger staffing capacity.
 
-#### Professional interpretation (stakeholder friendly)
-- Higher-HPRD states likely benefit from stronger regulatory environments, higher Medicaid reimbursement rates, or more robust healthcare labor markets, which lead to higher staffing levels and better resident outcomes.
-- Lower-HPRD states may face structural challenges in staffing, including wage competitiveness, workforce supply issues, or regulatory pressures that limit staffing expansion.
-- These variations create geographic inequities in resident experience and may influence quality ratings, hospitalization rates, and CMS compliance risk.
-- Understanding these state-level patterns is essential for organizations seeking to allocate resources, target support, or identify systemic vulnerabilities across their networks.
+Use state averages as a CMS monitoring tool
+States operating below ~7.0 Total HPRD should be flagged for closer review, as sustained low staffing may correlate with increased adverse events and survey deficiencies.
 
-#### Recommendations
-1. **Benchmark low-HPRD states for targeted operational support** Identify underlying causes—workforce shortages, funding gaps, wage competitiveness, or facility-level strain—and apply focused interventions such as temporary staffing support or wage incentives.
-2. **Study high-HPRD states to extract best practices** Analyze RN/LPN/CNA mix strategies, recruitment models, state-level wage policies, and retention programs that allow these states to maintain stronger staffing capacity.
-3. **Use state averages as a CMS monitoring tool** States operating below ~7.0 Total HPRD should be flagged for closer review, as sustained low staffing may correlate with increased adverse events and survey deficiencies.
-4. **Align resource allocation with geographic variability** Allocate training investments, clinical ladder programs, and workforce development funds to states consistently performing below benchmarks.
+Align resource allocation with geographic variability
+Allocate training investments, clinical ladder programs, and workforce development funds to states consistently performing below benchmarks.
 
-#### Conclusion
+## **Conclusion**
 State-level HPRD results reveal significant geographic disparities in nursing care capacity. Some states maintain robust staffing structures, while others operate lean models that may challenge quality and safety expectations. These findings highlight the need for tailored, state-specific strategies to improve staffing adequacy, strengthen clinical oversight, and promote equitable care across regions. This state benchmark will inform deeper analysis in upcoming questions, including facility outliers, census-adjusted staffing, and weekday–weekend performance patterns.
 
 ## **Q5 What is the RN–LPN–CNA Skill Mix by State?**
