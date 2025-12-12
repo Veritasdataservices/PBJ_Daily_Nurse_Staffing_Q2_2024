@@ -569,7 +569,7 @@ Strengthen weekend RN coverage Implement staggered scheduling, weekend different
 ![](Q10B_understaffed_below5_states_top15.png)
 ***
 
-This question identifies facilities that are national outliers in *low* staffing, creating a preliminary **National Red Flag Watch List**. We define "consistently low staffing" as facilities with an average Total HPRD below the national 10th percentile (6.0 HPRD).
+This question identifies facilities that are national outliers in *low* staffing, creating a preliminary **National Red Flag Watch List**. We define "consistently low staffing" as facilities with an average Total HPRD below the national 10th percentile (5.0 HPRD).
 
 ## **Insight**
 The national facility-level analysis for Q2 2024 reveals significant variation in average daily nursing hours, with a clear subset of facilities operating far below acceptable staffing expectations. Using three validated thresholds — the CMS historical minimum (HPRD), the modern minimum expectation (HPRD), and national percentile-based cutoffs (percentile and percentile ) facilities were classified into defined risk categories:
@@ -642,22 +642,77 @@ Overall, these findings reinforce the importance of consistent staffing monitori
 
 This analysis identifies facilities with high **coefficient of variation (CV)** in their daily Total HPRD, signifying operational instability (large, frequent swings between high and low staffing days).
 
-#### Key Insight
-- **CV Metric:** CV is calculated as (Standard Deviation of Daily HPRD) / (Average HPRD). High CV indicates erratic staffing.
-- **Variability Outliers:** Facilities with a CV above the 90th percentile are flagged (approx. 1,450 facilities).
-- **Staffing vs. Reporting:** High CV can be caused by:
-    1. **Operational Instability:** Genuine chaos in scheduling, high call-outs, or frequent use of emergency agency staff.
-    2. **Reporting Issues:** Staffing hours being reported intermittently, leading to days with HPRD=0 followed by days with high HPRD.
+## **What We Did**
+To understand how consistently each nursing facility staffs its residents, we analyzed day-to-day changes in Total Nursing Hours Per Resident Per Day (HPRD). Stable organizations tend to keep staffing levels relatively steady, while inconsistent facilities show large swings in daily hours.
 
-#### Professional interpretation (stakeholder friendly)
-High variability is almost as dangerous as low average staffing. Erratic staffing undermines continuity of care, causes staff burnout, and increases the likelihood of critical errors. This list of highly variable facilities provides a target for managerial and administrative oversight, as the operational foundation is unstable.
+How We Measured Variability (Simple Explanation)
+1. **Standard Deviation (SD):**
+This metric shows how much a facility's staffing levels change from one day to the next.
 
-### Recommendations
-1. **Focus on Administrative Processes:** Facilities with high CV should be audited for payroll and reporting practices, not just staffing levels.
-2. **Implement Stability Goals:** Management teams should be tasked with reducing CV by targeting more predictable staffing levels, regardless of census fluctuations.
+A **low SD means staffing is steady**.
+A **high SD means staffing jumps up and down frequently.**
+SD is one of the clearest and most widely trusted ways to measure operational consistency.
 
-#### Conclusion
-Staffing stability is a critical indicator of operational health. The highly variable facilities identified require focused administrative and reporting oversight to minimize instability and ensure reliable care delivery.
+2. **Interquartile Range** (IQR) Method:
+After calculating SD for every facility, we needed a fair way to determine which facilities were truly unusual. Instead of choosing a random cutoff, we used the IQR method, a standard statistical approach to detect outliers.
+
+**IQR** looks at the middle 50% of all facilities:
+
+Q1: The 25th percentile (lower bound of typical behavior)
+Q3: The 75th percentile (upper bound of typical behavior)
+**IQR** = Q3 – Q1
+A facility is considered unusually variable if its SD is greater than:
+
+**What We Did**
+Using the cleaned Q2 2024 PBJ dataset, we performed the following steps:
+
+Grouped the dataset by facility (provnum) to calculate:
+
+**Average Total HPRD**
+**Standard Deviation (SD) of Total HPRD**
+(SD shows how much staffing fluctuates day to day.)
+Calculated the national variability threshold using the Interquartile Range (IQR) method:
+
+Threshold for "unusual variability": SD > 1.612
+Flagged each facility as either:
+
+**Normal Variability** (SD ≤ 1.612)
+**High Variability** / **Outlier** (SD > 1.612)
+Created a clean summary dataset for reporting and visualization:
+
+Facility ID
+Facility Name
+State
+Mean HPRD
+SD HPRD
+Reporting Days
+Outlier Flag
+What We Found
+Total facilities analyzed: 14,564
+Facilities with unusually high staffing variability: 711
+This represents 4.88% of all facilities.
+A scatterplot of Mean HPRD vs SD clearly highlights these outlier facilities.
+These high-variability facilities experience significant day-to-day fluctuations in nursing hours that exceed typical operational ranges.
+
+## **Insight**
+The analysis reveals that while most facilities maintain steady staffing patterns, 711 facilities show unusually high day-to-day variability in their nursing hours. This level of fluctuation suggests potential operational instability, such as irregular scheduling, high call-out rates, inconsistent use of agency staff, or reporting inconsistencies.
+
+Facilities with high variability may struggle to provide consistent resident care, as staffing levels swing significantly from one day to the next. These patterns are meaningful from a quality-of-care and compliance standpoint because stable staffing is associated with better resident outcomes.
+
+## **Recommendation**
+Facilities flagged as high-variability outliers should undergo a targeted operational review. Leadership teams should evaluate:
+
+Scheduling practices
+Staff call-out frequency
+Weekend vs weekday staffing consistency
+Reliance on agency personnel
+PBJ reporting completeness and accuracy
+Introducing minimum staffing stability benchmarks, improving schedule planning, and strengthening oversight processes can help reduce unwanted fluctuations and enhance consistency in resident care.
+
+## **Conclusion**
+Question 11 highlights a small yet important subset of facilities whose staffing patterns differ significantly from national norms. These 711 high-variability facilities demonstrate staffing volatility that may signal deeper operational challenges.
+
+Monitoring staffing variability is a valuable quality-assurance tool. By identifying and addressing inconsistent patterns early, organizations can improve workforce reliability, reduce operational risks, and ultimately enhance resident outcomes.
 
 ## **Q12 How strongly is resident census related to staffing levels?**
 
