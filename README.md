@@ -978,7 +978,7 @@ Detected anomalies:
 Metric	Spike Count	Interpretation
 total_hours spikes	48,763	Likely monthly totals entered as daily hours
 hprd_total spikes	53,968	Mathematically impossible staffing levels
-Some entries were as high as 28,158 hours in a single day — operationally impossible.
+Some entries were as high as 28,158 hours in a single day - operationally impossible.
 
 These spikes indicate reporting inconsistencies, not real staffing activity.
 
@@ -1056,15 +1056,15 @@ We excluded NA_hours (nurse-aide trainee hours) and MedAide_hours because zeros 
 **Facility-level aggregation**
 For each facility we computed:
 
-max_total_hours — the single largest total_hours reported in Q2 2024
-max_hprd_total — the single largest hprd_total reported in Q2 2024
-zero_days_total_hours and zero_days_hprd — counts of days with total_hours == 0 or hprd_total == 0
-spike_days_total_hours and spike_days_hprd — counts of days exceeding IQR-based spike thresholds (see below)
+max_total_hours - the single largest total_hours reported in Q2 2024
+max_hprd_total - the single largest hprd_total reported in Q2 2024
+zero_days_total_hours and zero_days_hprd - counts of days with total_hours == 0 or hprd_total == 0
+spike_days_total_hours and spike_days_hprd - counts of days exceeding IQR-based spike thresholds (see below)
 Outlier / spike detection method
-We used the Interquartile Range (IQR) method — a standard, robust statistic for outlier detection:
+We used the Interquartile Range (IQR) method - a standard, robust statistic for outlier detection:
 
 Calculate Q1 (25th percentile) and Q3 (75th percentile)
-IQR = Q3 − Q1
+IQR = Q3 - Q1
 Spike Threshold = Q3 + 1.5 × IQR
 This flags unusually large daily entries that fall well outside the central spread of the data.
 Facility classification rule (how we decided “unrealistic”)
@@ -1074,11 +1074,11 @@ max_total_hours > 12,000 (operationally improbable for a single day) OR
 max_hprd_total > 24 (exceeds hours in a day and practical limits) OR
 zero_days_total_hours > 3 (multiple days with zero total hours is a red flag) OR
 spike_days_total_hours > 5 OR spike_days_hprd > 5 (repeated spike days)
-Analytic terms — plain language explanations
-IQR (Interquartile Range) — the distance between the 25th and 75th percentiles. It captures the middle 50% of values and is used to measure normal spread while resisting extreme values.
-Spike Threshold (Q3 + 1.5×IQR) — a rule-of-thumb cutoff: values above this are statistical outliers and deserve investigation.
-HPRD (Hours Per Resident Per Day) — total nursing hours for a day divided by census; it expresses staffing intensity per resident in hours/day.
-Outlier / Unrealistic value — a reported number that is statistically and operationally implausible (for example, a daily staff-hours total that is physically impossible given 24 hours in a day).
+Analytic terms - plain language explanations
+IQR (Interquartile Range) - the distance between the 25th and 75th percentiles. It captures the middle 50% of values and is used to measure normal spread while resisting extreme values.
+Spike Threshold (Q3 + 1.5×IQR) - a rule-of-thumb cutoff: values above this are statistical outliers and deserve investigation.
+HPRD (Hours Per Resident Per Day) - total nursing hours for a day divided by census; it expresses staffing intensity per resident in hours/day.
+Outlier / Unrealistic value - a reported number that is statistically and operationally implausible (for example, a daily staff-hours total that is physically impossible given 24 hours in a day).
 Key findings (from the dataset)
 Facilities analyzed: 14,564 (facility-level summary).
 Facilities flagged as Unrealistic Reporters: 2,067 (≈ 14.2% of facilities).
@@ -1086,8 +1086,8 @@ IQR-based spike thresholds used (dataset):
 Total-hours spike threshold: ≈ 1,368.90 hours/day
 HPRD spike threshold: ≈ 11.69 hours/resident/day
 Extreme single-day values observed in the dataset:
-max(total_hours) = 28,158 hours (single-day record) — operationally impossible.
-max(hprd_total) = 386.16 hours/resident/day — mathematically impossible.
+max(total_hours) = 28,158 hours (single-day record) - operationally impossible.
+max(hprd_total) = 386.16 hours/resident/day - mathematically impossible.
 Zero-records (dataset-level):
 total_hours == 0: 2,677 records
 hprd_total == 0: 2,522 records
@@ -1095,9 +1095,9 @@ These zeros represent missing or incorrect submissions rather than realistic ope
 Insight (professional & stakeholder-friendly)
 A significant minority of facilities (≈ 14.2%) in Q2 2024 report facility-level values that are statistically and operationally unrealistic. The anomalies fall into two clear groups:
 
-Impossible single-day totals — very large total_hours entries (e.g., 28,158 hours) and very high hprd_total values (e.g., 386.16 HPRD) that cannot occur in a 24-hour period. These are almost certainly reporting errors (for example, monthly totals uploaded as daily, duplicate entries, or data mapping issues).
+Impossible single-day totals - very large total_hours entries (e.g., 28,158 hours) and very high hprd_total values (e.g., 386.16 HPRD) that cannot occur in a 24-hour period. These are almost certainly reporting errors (for example, monthly totals uploaded as daily, duplicate entries, or data mapping issues).
 
-Repeated anomalies — facilities that have multiple spike days or multiple zero-days. Repeated spikes/zeros suggest systemic issues at the facility (workflow/configuration problems) rather than one-off mistakes.
+Repeated anomalies - facilities that have multiple spike days or multiple zero-days. Repeated spikes/zeros suggest systemic issues at the facility (workflow/configuration problems) rather than one-off mistakes.
 
 Both types of anomalies materially reduce confidence in PBJ-derived staffing metrics and, if left unaddressed, will distort compliance reviews, benchmarking, and any downstream analytics (staffing adequacy assessments, quality correlations, payments or audits).
 
@@ -1124,15 +1124,15 @@ Shows top facilities by max_total_hours and max_hprd_total
 Tracks repeat offenders (spike days and zero-day counts)
 Sends alerts if a facility exceeds thresholds
 Document and enforce submission standards
-Standardize file formats and make a short validation guide mandatory with each PBJ submission — this reduces the most common human and system errors.
+Standardize file formats and make a short validation guide mandatory with each PBJ submission - this reduces the most common human and system errors.
 
 ## **Conclusion**
 The facility-level review confirms that some facilities are reporting unrealistic values, and this is not rare: roughly 1 in 7 facilities in the Q2 2024 dataset are flagged under our conservative, audit-ready rules. The errors we see (impossible daily hours, extreme HPRD, repeated spikes, and zero entries) are consistent with common PBJ reporting mistakes (monthly totals submitted as daily, duplicate rows, and misconfigured exports).
 
-Addressing this requires a mix of automated validation, targeted audits, and facility support/training. By implementing the recommendations above, organizations can substantially improve PBJ data integrity — which in turn increases the reliability of staffing analytics, strengthens compliance, and protects residents through better-informed staffing oversight.
+Addressing this requires a mix of automated validation, targeted audits, and facility support/training. By implementing the recommendations above, organizations can substantially improve PBJ data integrity - which in turn increases the reliability of staffing analytics, strengthens compliance, and protects residents through better-informed staffing oversight.
 
 
-## **Q17 Are some facilities substituting staff types?**
+## **Q17.	Staffing Mix Efficiency: Are facilities substituting RN/LPN/CNA hours?**
 
 This question uses correlation analysis to determine if facilities are intentionally replacing higher-skilled, more expensive staff (RNs) with lower-skilled staff (LPNs or CNAs) due to cost pressures or shortages.
 
@@ -1161,7 +1161,7 @@ The positive correlation suggests that staffing models are generally **coordinat
 
 The Q2 2024 PBJ data shows **no substitution** occurring between RN, LPN, or CNA roles. All staffing categories trend positively together, demonstrating stable, coordinated staffing models rather than replacement strategies. Facilities appear to maintain appropriate role differentiation consistent with regulatory expectations.
 
-## **18.Top & Bottom 5% facilities — “Watch list” analysis**
+## **18.Top & Bottom 5% facilities - “Watch list” analysis**
 
 This question identifies the national extremes in staffing performance: the **Excellence List** (top 5% by Total HPRD) and the **Critical Watch List** (bottom 5% by Total HPRD).
 
@@ -1169,26 +1169,110 @@ This question identifies the national extremes in staffing performance: the **Ex
 ![](q18_hprd_distribution_corrected.png)
 ***
 
-#### Key Insight
+## **National Staffing Outlier Identification Using HPRD Percentiles**
+Process Overview How the Analysis Was Performed
+To identify facilities that may require closer oversight, we analyzed staffing levels using HPRD (Hours Per Resident Day) a standard healthcare metric calculated as:
 
-- **Critical Watch List (Bottom 5%):**
-    - **Count:** 728 facilities
-    - **Threshold:** Average Total HPRD below 5.3 hours
-    - **Profile:** These facilities are severely understaffed and represent the nation's most critical risk points for resident safety and quality violations. This list requires priority intervention.
-- **Excellence List (Top 5%):**
-    - **Count:** 728 facilities
-    - **Threshold:** Average Total HPRD above 9.7 hours
-    - **Profile:** These facilities are operating at best-in-class staffing levels and can serve as benchmarks for operational best practices, innovative workforce models, and effective resource allocation.
+**HPRD** = Total Nursing Hours / Resident Census
 
-#### Professional interpretation (stakeholder friendly)
-This two-tiered list provides immediate, clear targets for both risk mitigation and best practice extraction. The Critical Watch List requires urgent regulatory and clinical attention to prevent harm, while the Excellence List should be studied to identify scalable models for national improvement. This is a foundational output for both regulatory compliance and industry advocacy.
+HPRD reflects how many direct-care hours each resident receives per day, making it the most reliable measure of staffing adequacy across facilities of different sizes.
 
-### Recommendations
-1. **Triage the Watch List:** Implement real-time monitoring and mandatory improvement plans for the 728 facilities on the Critical Watch List.
-2. **Study the Excellence List:** Perform deep-dive case studies on the top 728 facilities to understand their operational, financial, and workforce models, and create a playbook for wider industry adoption.
+1. Data Validation
+We confirmed that all required fields were present with correct datatypes:
 
-#### Conclusion
-The Top and Bottom 5% lists provide the industry with a clear data-driven map of the most significant performance extremes.
+PROVNUM (facility ID)
+PROVNAME (facility name)
+STATE
+HPRD_Total
+Total_Nurse_Hours
+MDScensus
+No ID fields were missing. Staffing fields contained valid numeric values with no negative hours.
+A small number of missing HPRD and census values were excluded from percentile calculation.
+
+2. Calculate Average HPRD per Facility
+We aggregated PBJ data at the facility level to compute each facility’s average HPRD across the full quarter.
+This allows fair comparison between facilities.
+
+3. Determine Staffing Thresholds Using Percentiles
+We computed the 5th percentile and 95th percentile of all facility-level HPRD values:
+
+Bottom 5% cutoff: 5.10 HPRD
+Top 5% cutoff: 11.27 HPRD
+These represent the natural boundaries of unusually low or unusually high staffing.
+
+4. Classify Facilities Into Three Groups
+Classification	Criteria	Meaning
+Bottom 5% (Watchlist - Low Staffing)	HPRD < 5.10	Potential understaffing risk
+Normal Range	5.10–11.27 HPRD	Staffing levels typical of national norms
+Top 5% (High Staffing)	HPRD > 11.27	Very high staffing or possible over-reporting
+5. Count Facilities in Each Category
+Final classification results:
+
+359 facilities → Bottom 5% (Watchlist - Low Staffing)
+13,575 facilities → Normal staffing range
+630 facilities → Top 5% (High Staffing)
+Total facilities analyzed: 14,564
+Visual A-Facility Classification Counts (Top, Normal, Bottom 5%)
+This bar chart displays how facilities are distributed across the three staffing categories.
+
+**Key Interpretation**
+The Bottom 5% (359 facilities) represent the primary risk group for under-staffing concerns.
+The Top 5% (630 facilities) show unusually high staffing, which may indicate:
+Specialized high-acuity care or
+Potential reporting anomalies.
+The majority (13,575 facilities) fall within the normal national staffing range.
+This visualization clearly communicates how many facilities fall into each classification and where oversight should be prioritized.
+
+Visual B — Distribution of Average HPRD (Histogram with Cutoff Lines)
+This histogram displays the national distribution of facility-level HPRD values with clear dashed lines showing the Bottom 5% and Top 5% thresholds.
+
+**Key Interpretation**
+Most facilities cluster between 6 and 10 HPRD, indicating consistent national staffing patterns.
+The Bottom 5% threshold (5.10 HPRD) identifies facilities providing significantly fewer care hours per resident.
+The Top 5% threshold (11.27 HPRD) highlights facilities with unusually high staffing.
+The axis is limited to 0–30 HPRD for readability.
+Extremely high outliers (very rare) exist but were excluded to prevent distortion of scale.
+The chart visually validates that the percentile boundaries correctly capture the extreme ends of staffing levels.
+
+## **Insights-What the Data Tells Us**
+Staffing nationwide is stable, with most facilities maintaining 6–10 HPRD, aligning with expected operational norms.
+
+359 facilities fall below 5.10 HPRD, a level significantly lower than national expectations.
+These facilities may be:
+
+understaffed,
+experiencing resource constraints, or
+underreporting hours.
+630 facilities exceed 11.27 HPRD, representing the top 5% nationally.
+These facilities require further review to distinguish:
+
+genuinely high staffing due to acuity
+or PBJ reporting inconsistencies.
+Percentile analysis provides a fair, standardized national method for identifying staffing outliers.
+
+The results support a data-driven oversight strategy by highlighting where regulatory attention is most needed.
+
+## **Recommendation**
+For Bottom 5% Facilities (359 Facilities)
+Initiate targeted reviews.
+Verify staffing schedules, census accuracy, and timekeeping records.
+Consider supportive interventions or corrective action plans.
+For Top 5% Facilities (630 Facilities)
+Audit PBJ reporting processes.
+Validate whether unusually high staffing levels reflect:
+high-acuity models,
+staffing surges,
+or data entry/reporting errors.
+For Ongoing Oversight
+Implement a quarterly Watchlist dashboard using the same percentile approach.
+Share findings with state-level oversight teams for targeted follow-up.
+Conclusion
+The Top & Bottom 5% Watchlist methodology successfully identifies facilities operating well outside national staffing norms.
+
+359 facilities (Bottom 5%) show potential under-staffing.
+630 facilities (Top 5%) show unusually high staffing or potential reporting issues.
+13,575 facilities operate within expected ranges.
+By focusing regulatory attention on these two outlier groups, CMS and oversight bodies can improve quality of care, reduce reporting inconsistencies, and enhance national staffing transparency.
 
 
 ## **19. How do all staffing roles relate to each other?**
