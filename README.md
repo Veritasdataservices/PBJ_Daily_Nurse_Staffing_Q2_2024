@@ -7,7 +7,7 @@ The Payroll-Based Journal (PBJ) Daily Nurse Staffing Q2 2024 dataset, published 
 This project, conducted by Veritas Data Services, transforms this large administrative dataset into clear, actionable insights that help stakeholders understand staffing levels, operational patterns, and care delivery risks across facilities.
 ## Project Files & Technical Documentation
 
- **1. Data Cleaning & Preparation Notebook**
+ **1.Data Cleaning & Preparation Notebook**
 File: **PBJ_Daily_Nurse_Staffing_Q2_2024_Cleaning_Pipeline.ipynb**
 
 This notebook contains the full data engineering workflow, including:
@@ -42,12 +42,12 @@ Both notebooks are included so that stakeholders, auditors, and collaborators ca
 * **Review all transformations** from raw CMS PBJ data to final insights
 * **Inspect code quality**, methodological consistency, and analytic rigor
 
-# References
+### References
 - Veritas Data Services. *PBJ Daily Nurse Staffing – Q2 2024 Cleaning Pipeline.* Jupyter Notebook.  
 - Veritas Data Services. *PBJ Daily Nurse Staffing – Q2 2024 Full Analysis & Visualization.* Jupyter Notebook.  
 - Centers for Medicare & Medicaid Services (CMS). Payroll-Based Journal (PBJ) Daily Nurse Staffing Data, Q2 2024 Release.
 
-# Dataset Overview
+### Dataset Overview
 
 After extraction and cleaning, the dataset contains:
 
@@ -65,7 +65,7 @@ The dataset includes:
 - Employee vs Contract hours
 - Derived metrics including Total Hours and HPRD (Hours per Resident Day)
 
-# Analysis Framework
+### Analysis Framework
 
 The analysis is organized into 20 professional, stakeholder-focused questions designed to capture staffing sufficiency, state-level patterns, outliers, workforce mix, and operational risks.
 
@@ -76,12 +76,12 @@ These insights support decision-making for:
 - Staffing directors
 - Policy and regulatory teams
 
-# PBJ Daily Nurse Staffing-Q2 2024
-## Official Analysis Questions (Stakeholder-Friendly Version)
+## PBJ Daily Nurse Staffing-Q2 2024
+### Official Analysis Questions (Stakeholder-Friendly Version)
 
 Below are the key questions this analysis will answer. These questions are written in clear, non-technical language so that any reader including non-analysts can understand the purpose and value of each part of the study.
 
-# NATIONAL STAFFING LEVELS
+## NATIONAL STAFFING LEVELS
 
 ### **1. What is the national average amount of nursing care each resident receives per day?**
 (We will calculate the Hours Per Resident Day-HPRD for RN, LPN, CNA, and Total.)
@@ -92,7 +92,7 @@ Below are the key questions this analysis will answer. These questions are writt
 ### **3. What percentage of facilities meet or fall below expected staffing requirements?**
 (Helps identify whether staffing is generally adequate across the country.)
 
-# STATE & REGIONAL COMPARISONS
+## STATE & REGIONAL COMPARISONS
 
 ### **4. How do average staffing levels differ from state to state?**
 (Some states may consistently staff better or worse than others.)
@@ -106,7 +106,7 @@ Below are the key questions this analysis will answer. These questions are writt
 ### **7. Do different U.S. regions show unique staffing patterns?**
 (Northeast vs South vs Midwest vs West.)
 
-# FACILITY-LEVEL OPERATIONS
+## FACILITY-LEVEL OPERATIONS
 
 ### **8. How does total staffing change day-by-day throughout Q2?**
 (We will look at trends from April to June.)
@@ -120,7 +120,7 @@ Below are the key questions this analysis will answer. These questions are writt
 ### **11. Which facilities show unusual spikes or drops in staffing?**
 (These may indicate reporting issues or operational instability.)
 
-# CENSUS & STAFFING RELATIONSHIP
+## CENSUS & STAFFING RELATIONSHIP
 
 ### **12. How strongly is resident census related to staffing levels?**
 (Are high-census facilities providing enough care?)
@@ -128,7 +128,7 @@ Below are the key questions this analysis will answer. These questions are writt
 ### **13. Which facilities have many residents but low staffing?**
 (These will be highlighted as high-risk facilities.)
 
-# DATA QUALITY & REPORTING CHECKS
+## DATA QUALITY & REPORTING CHECKS
 
 ### **14. Do facilities with missing or invalid Provider IDs show different staffing patterns?**
 (This helps detect reporting problems.)
@@ -139,7 +139,7 @@ Below are the key questions this analysis will answer. These questions are writt
 ### **16.Are some facilities reporting unrealistic values?**
 (We check for impossible or suspicious patterns.)
 
-# ADVANCED STAFFING ANALYTICS
+## ADVANCED STAFFING ANALYTICS
 
 ### **17. Are some facilities substituting staff types?**
 (Example: Using more CNAs instead of RNs or vice versa.)
@@ -230,7 +230,7 @@ This question examines the frequency distribution of the primary staffing metric
 ## **Key Insight**
 The national distribution of Total Hours Per Resident Per Day (HPRD) in Q2 2024 shows a strong and consistent pattern across U.S. nursing facilities. Most facility-days fall between 6 and 10 HPRD, with the highest concentration around 7–8 hours per resident per day. This confirms that while staffing levels vary by facility, the national system operates within a relatively predictable range.
 
-The distribution is slightly right-skewed, meaning there are more facilities operating below 10 HPRD than above it. Very few facility-days exceed 12 HPRD, and extremely high values are rare, indicating that only a small number of facilities staff significantly above the national norm. The lower tail (0–3 HPRD) exists but represents a very small share of all facility-days, suggesting isolated operational disruptions, reporting anomalies, or exceptional circumstances rather than systemic under-staffing.
+The distribution is slightly right-skewed, meaning there are more facilities operating below 10 HPRD than above it. Very few facility-days exceed 12 HPRD, and extremely high values are rare, indicating that only a small number of facilities staff significantly above the national norm. The lower tail (0-3 HPRD) exists but represents a very small share of all facility-days, suggesting isolated operational disruptions, reporting anomalies, or exceptional circumstances rather than systemic under-staffing.
 
 Overall, the distribution reflects a stable industry-wide staffing pattern where most facilities provide a moderate level of daily care, with controlled variation across the sector.
 
@@ -306,7 +306,7 @@ Facilities below 0.55 RN HPRD should undergo elevated internal monitoring:
 medication administration
 care-plan updates
 incident response capability
-Strengthen LPN–RN Team Structures
+Strengthen LPN-RN Team Structures
 
 Even in Standard-B-compliant facilities:
 Implement scheduled RN oversight rounds.
@@ -364,9 +364,9 @@ State-level HPRD results reveal significant geographic disparities in nursing ca
 
 This question examines how each U.S. state distributes its nursing workforce across the three core staffing roles:
 
-- **Registered Nurses (RN)** — providing clinical oversight and skilled assessment
-- **Licensed Practical Nurses (LPN)** — delivering intermediate clinical care
-- **Certified Nursing Assistants (CNA)** — supporting daily resident care
+- **Registered Nurses (RN)** - providing clinical oversight and skilled assessment
+- **Licensed Practical Nurses (LPN)** - delivering intermediate clinical care
+- **Certified Nursing Assistants (CNA)** - supporting daily resident care
 
 The skill mix is presented as the proportion of total HPRD contributed by each role.
 
@@ -621,9 +621,7 @@ Enhanced reporting oversight
 This proactive approach prevents facilities from sliding into crisis-level staffing.
 
 4. Integrate Percentile Thresholds in Ongoing Monitoring
-Percentiles (
- and 
-) give a nationally normalized benchmark, enabling CMS, state regulators, and facility owners to identify emerging staffing issues before they become regulatory failures.
+Percentiles (and) give a nationally normalized benchmark, enabling CMS, state regulators, and facility owners to identify emerging staffing issues before they become regulatory failures.
 
 ## **Conclusion**
 The analysis identifies a clear pattern: while most facilities operate within acceptable staffing ranges, a significant minority are dangerously understaffed, disproportionately concentrated in certain states. Using multiple validated thresholds ensures that both critical failures and incipient risks are accurately identified.
@@ -660,7 +658,7 @@ After calculating SD for every facility, we needed a fair way to determine which
 
 Q1: The 25th percentile (lower bound of typical behavior)
 Q3: The 75th percentile (upper bound of typical behavior)
-**IQR** = Q3 – Q1
+**IQR** = Q3 - Q1
 A facility is considered unusually variable if its SD is greater than:
 
 **What We Did**
@@ -1302,7 +1300,7 @@ Plain-language interpretation (what the chart shows at a glance)
 CNA hours are the primary driver of total nurse hours (r = 0.97). When total nursing hours rise, CNA hours almost always rise too.
 LPN hours are also strongly associated with total hours (r = 0.80).
 RN hours increase with total staffing but less strongly (r = 0.67). RNs are present, but their hours do not scale as tightly as CNA/LPN.
-RN and LPN hours have a low direct relationship (r = 0.28) — there is no consistent pattern of RN↔LPN substitution.
+RN and LPN hours have a low direct relationship (r = 0.28) - there is no consistent pattern of RN↔LPN substitution.
 HPRD (hours-per-resident-day) correlates weakly with role-level hours because it is normalized by census; role-mix and census both affect it.
 
 ## **Insight - healthcare-analytics interpretation**
@@ -1341,31 +1339,171 @@ Two scoring models were constructed:
 ![](q20_simple_staffing_score_normalized.png)
 ***
 
-#### Key Insight
+## **This analysis evaluates how staffing quality varies across states by developing two different state-level scoring models:**
 
-- **Simple Score (Volume Focus):** New York, Alaska, and Oregon rank highest, confirming their leadership in the **volume** of care.
-- **Composite Score (Quality/Stability Focus):** States shift dramatically when consistency and stability are introduced. States with high average HPRD but high daily variability are penalized. This reveals that **high volume does not always equal high quality or stability**.
-- **Bottom Performers:** States in the Southeast (Louisiana, Mississippi) consistently rank lowest on both scores, indicating deep, structural staffing deficiencies across both volume and quality.
+**A Simple Staffing Score (Baseline CMS-Aligned Model)**
+→ Uses only Hours-Per-Resident-Day (HPRD) and RN hours
+→ Reflects basic staffing strength
 
-#### Professional interpretation (stakeholder friendly)
-The dual scoring system provides a responsible and comprehensive view of state performance. States that score high on the Composite Score demonstrate:
-- High RN skill mix
-- Strong care hours
-- Stable staffing
+**A Composite Staffing Quality Score (Advanced Multi-Factor Model)**
+→ Incorporates HPRD, RN hours, RN skill mix, staffing stability, and outlier penalties
+→ Reflects deeper staffing quality, consistency, and workforce structure
 
+Both models were normalized to a 0–1 scale for comparability and visual clarity.
+
+ **Process Overview-How the Scoring Was Calculated**
+Step 1: Aggregate Facility-Level Data into State Averages
+For each state, we computed:
+
+Average HPRD_Total
+Average RN hours (Hrs_RN)
+Average LPN hours
+Average CNA hours
+RN Skill Mix
+[ \text{RN Skill Mix} = \frac{\text{RN Hours}}{\text{RN + LPN + CNA Hours}} ]
+Variance of RN, LPN, and CNA hours (proxy for staffing stability)
+Total nursing hours provided statewide
+This produced one row per state (51 rows including D.C. and Puerto Rico).
+
+Step 2: Compute the Simple Staffing Score (Baseline CMS-Aligned Model)
+This model reflects basic staffing strength associated with resident care.
+It uses only:
+
+Average HPRD_Total
+Average RN Hours
+We first normalized each of these:
+
+**[ HPRD_Score = \frac{HPRD - HPRD_{min}}{HPRD_{max} - HPRD_{min}} ]**
+
+**[ RN_Score = \frac{RN_Hours - RN_{min}}{RN_{max} - RN_{min}} ]**
+
+Then combined them:
+
+**[ Simple_Staffing_Score = 0.5(HPRD_Score) + 0.5(RN_Score) ]**
+
+**Interpretation:**
+Higher scores = states with stronger baseline staffing (more hours, especially RN-led care).
+But this model does NOT measure quality consistency or workforce structure.
+
+Step 3: Compute the Composite Staffing Quality Score (Advanced Multi-Factor Model)
+This model adds critical quality-based components:
+
+Z-Score Standardization
+To compare states fairly, we transformed:
+
+**HPRD_Total**
+**RN hours**
+**RN Skill Mix**
+into z-scores, which measure how far a state is above or below the national mean.
+
+**RN Skill Mix Component*8
+A higher RN proportion indicates more professional care, which research links to better outcomes.
+
+**Staffing Stability Bonus**
+States with lower variance (more consistent staffing week-to-week) receive a bonus.
+
+**Outlier Penalty**
+States containing extreme outliers (unusually high hours that may reflect reporting issues) are penalized.
+
+The final composite score:
+
+**[ Composite = Z_{HPRD} + Z_{RN} + Z_{RNMix} + StabilityBonus - OutlierPenalty ]**
+
+Then normalized to a 0–1 scale for the chart.
+
+**Interpretation:**
+Higher scores = states with higher staffing quality, more consistent care patterns, and stronger RN-led workforce structures.
+
+**Results Summary-What the Two Charts Show**
+A) Composite Staffing Quality Score (Advanced Model)
+Top-scoring states (strongest staffing quality):
+
+Puerto Rico: 3.03 (highest nationally)
+Alaska: 1.48
+Hawaii: 1.40
+Washington D.C.: 1.16
+Lowest-scoring states:
+
+Louisiana: –0.84
+Missouri: –0.79
+Texas: –0.74
+Georgia: –0.74
+Oklahoma: –0.67
+Why these rankings differ:
+This model rewards:
+
+**Higher RN skill-mix**
+**Lower variance (more stable staffing)**
+**Reasonable reporting (fewer outliers)**
+States like AK, HI, PR show strong RN utilization and stable patterns.
+States like LA, MO, GA show weaker RN representation and higher instability.
+
+B) Simple Staffing Score (Baseline CMS-Aligned Model)
+Top-scoring states:
+
+Alaska: 0.71
+Puerto Rico: 0.69
+Washington D.C.: 0.65
+Hawaii: 0.60
+New York: 0.41
+Lowest-scoring states:
+
+Louisiana: 0.05
+Missouri: 0.05
+Texas: 0.05
+Oklahoma: 0.06
+Georgia: 0.10
+What this chart represents:
+This model shows which states provide the most hours of care per resident, especially RN-led care.
+It does not adjust for stability, RN ratios, or outliers—so it is more volume-driven than quality-driven.
+
+**Key Insight-Why the Two Models Produce Different Rankings**
+Model	What It Measures	Strengths	Limitations
+Simple Staffing Score	Overall staffing volume (HPRD + RN hours)	Easy to interpret, CMS-aligned	Does not measure stability, RN skill mix, or anomalies
+Composite Staffing Score	Multi-dimensional staffing quality	Captures consistency, RN leadership, adjusted comparisons	More complex to compute
+Example:
+New York scores 0.41 in the simple model (strong hours delivered)
+but falls lower in the composite model due to instability and lower RN skill mix.
+
+Texas scores low in both models due to both:
+
+Low HPRD
+Low RN hours
+High variance
+Outlier penalties
+** Final Recommendations**
+1. Prioritize states with low composite scores
+Especially:
+
+Louisiana
+Missouri
+Texas
+Georgia
+Oklahoma
+These states show consistent weaknesses across:
+
+RN ratios
+Staffing stability
+Care hours delivered
+2. Consider both scores when evaluating staffing policy
+The Simple Score reflects the quantity of care.
+The Composite Score reflects the quality and consistency of care.
+Using both provides a more balanced and accountable interpretation.
+
+3. Highlight high-performing models
+States like Alaska, Hawaii, and Puerto Rico demonstrate:
+
+High RN skill mix
+Strong care hours
+Stable staffing
 These can serve as benchmarks for best practice.
-
----
-
-## **Conclusion**
-
+Conclusion
 Question 20 required a multi-layered evaluation of state staffing performance.
-By constructing **two scoring models**—a simple CMS-aligned measure and an advanced composite quality metric—we captured both:
+By constructing two scoring modelsa simple CMS-aligned measure and an advanced composite quality metric we captured both:
 
-- **How much care is delivered**, and
-- **How consistent, stable, and RN-led that care is.**
-
-The visualizations clearly show that states differ significantly depending on whether we measure **volume** (simple score) or **quality structure** (composite score).
+How much care is delivered, and
+How consistent, stable, and RN-led that care is.
+The visualizations clearly show that states differ significantly depending on whether we measure volume (simple score) or quality structure (composite score).
 This provides a more complete and responsible picture of national staffing performance.
 
 
