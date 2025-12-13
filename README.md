@@ -5,47 +5,34 @@
 The Payroll-Based Journal (PBJ) Daily Nurse Staffing Q2 2024 dataset, published by the Centers for Medicare & Medicaid Services (CMS), provides facility-level daily staffing and census data for U.S. nursing homes. This dataset is essential for regulatory oversight, quality measurement, and staffing compliance evaluation.
 
 This project, conducted by Veritas Data Services, transforms this large administrative dataset into clear, actionable insights that help stakeholders understand staffing levels, operational patterns, and care delivery risks across facilities.
-## Project Files & Technical Documentation
 
- **1.Data Cleaning & Preparation Notebook**
-File: **PBJ_Daily_Nurse_Staffing_Q2_2024_Cleaning_Pipeline.ipynb**
+**Veritas Data Services. PBJ Daily Nurse Staffing Q2 2024 – Data Cleaning & Validation Pipeline.**
+Jupyter Notebook **(PBJ_Daily_Nurse_Staffing_Q2_2024_Cleaning_Pipeline.ipynb)**
 
-This notebook contains the full data engineering workflow, including:
-* Raw PBJ Q2 2024 data loading
-* Data type corrections
-* Missing value assessments
-* Outlier detection and handling
-* Creation of all derived staffing metrics (**HPRD**, **skill-mix ratios**, **composite features**)
-* Validation checks (**zero-hours**, **unrealistic values**, **consistency validation**)
-* Final cleaned dataset export used for all analysis and charts
+Contains the full data engineering workflow, including raw CMS PBJ data ingestion, data type corrections, missing-value handling, anomaly detection, creation of HPRD and staffing metrics, and final dataset validation.
 
-This is the official **source of truth** for the dataset used in the entire project.
+Full Analysis & Visualization
 
- **2. Full Analysis & Visualization Notebook**
-File: **PBJ_Daily_Nurse_Staffing_Q2_2024_Final.ipynb**
+**Veritas Data Services. PBJ Daily Nurse Staffing Q2 2024 – Full Analysis & Visualization.**
+Jupyter Notebook **(PBJ_Daily_Nurse_Staffing_Q2_2024_Final.ipynb)**
 
-This notebook contains:
-* All **20 analytical questions**
-* Full Python code, EDA, and computation steps
-* The formulas and calculations used to derive all insights
-* All chart generation code (**Q1–Q20**)
-* The final analytical interpretations behind each finding
-* Regulatory reasoning, workforce logic, and quality implications
+Contains all analytical logic for Questions 1–20, including calculations, statistical methods, chart generation, and healthcare-focused interpretations used throughout this project.
 
-This notebook represents the complete **analytical engine** of the project giving more depth to all the insights presented in the README.
+**Data Source**
 
-**Usage Note for Reviewers**
-Both notebooks are included so that stakeholders, auditors, and collaborators can:
+Centers for Medicare & Medicaid Services (CMS).
+Payroll-Based Journal (PBJ) Daily Nurse Staffing Data – Q2 2024.
 
+Official CMS administrative dataset used for regulatory oversight, staffing compliance, and quality analysis of U.S. nursing facilities.
+
+**Reproducibility Note**
+
+All results, figures, and insights presented in this repository are fully reproducible using the two referenced Jupyter notebooks.
+The cleaning pipeline notebook serves as the single source of truth for dataset preparation, while the analysis notebook contains the complete analytical framework and visualization logic.
 * **Validate calculations**
 * **Reproduce results**
 * **Review all transformations** from raw CMS PBJ data to final insights
 * **Inspect code quality**, methodological consistency, and analytic rigor
-
-### References
-- Veritas Data Services. *PBJ Daily Nurse Staffing – Q2 2024 Cleaning Pipeline.* Jupyter Notebook.  
-- Veritas Data Services. *PBJ Daily Nurse Staffing – Q2 2024 Full Analysis & Visualization.* Jupyter Notebook.  
-- Centers for Medicare & Medicaid Services (CMS). Payroll-Based Journal (PBJ) Daily Nurse Staffing Data, Q2 2024 Release.
 
 ### Dataset Overview
 
@@ -58,7 +45,7 @@ After extraction and cleaning, the dataset contains:
 - Reporting Frequency: Daily per facility
 - Source: CMS PBJ Daily Nurse Staffing Data
 
-The dataset includes:
+**The dataset includes:**
 - Facility identifiers (PROVNUM, PROVNAME, CITY, STATE, COUNTY)
 - Daily census (MDScensus)
 - Daily staffing hours for RN, LPN, CNA, Nurse Aides in Training, Medication Aides
