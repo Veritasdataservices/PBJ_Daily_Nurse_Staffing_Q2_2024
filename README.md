@@ -68,76 +68,76 @@ These insights support decision-making for:
 
 Below are the key questions this analysis will answer. These questions are written in clear, non-technical language so that any reader including non-analysts can understand the purpose and value of each part of the study.
 
-## NATIONAL STAFFING LEVELS
+### NATIONAL STAFFING LEVELS
 
-### **1. What is the national average amount of nursing care each resident receives per day?**
+#### **1. What is the national average amount of nursing care each resident receives per day?**
 (We will calculate the Hours Per Resident Day-HPRD for RN, LPN, CNA, and Total.)
 
-### **2. How are staffing levels distributed across all nursing homes nationwide?**
+#### **2. How are staffing levels distributed across all nursing homes nationwide?**
 (Are most facilities low, average, or high in the amount of care they provide?)
 
-### **3. What percentage of facilities meet or fall below expected staffing requirements?**
+#### **3. What percentage of facilities meet or fall below expected staffing requirements?**
 (Helps identify whether staffing is generally adequate across the country.)
 
-## STATE & REGIONAL COMPARISONS
+### STATE & REGIONAL COMPARISONS
 
-### **4. How do average staffing levels differ from state to state?**
+#### **4. How do average staffing levels differ from state to state?**
 (Some states may consistently staff better or worse than others.)
 
-### **5. What does each state’s skill mix look like?**
+#### **5. What does each state’s skill mix look like?**
 (How much care comes from RNs vs LPNs vs CNAs in each state?)
 
-### **6. Which states are the best and worst staffed overall?**
+#### **6. Which states are the best and worst staffed overall?**
 (Top 10 and bottom 10 states based on total HPRD.)
 
-### **7. Do different U.S. regions show unique staffing patterns?**
+#### **7. Do different U.S. regions show unique staffing patterns?**
 (Northeast vs South vs Midwest vs West.)
 
-## FACILITY-LEVEL OPERATIONS
+### FACILITY-LEVEL OPERATIONS
 
-### **8. How does total staffing change day-by-day throughout Q2?**
+#### **8. How does total staffing change day-by-day throughout Q2?**
 (We will look at trends from April to June.)
 
-### **9. Do facilities staff differently on weekdays compared to weekends?**
+#### **9. Do facilities staff differently on weekdays compared to weekends?**
 (A common quality-of-care issue.)
 
-### **10. Which facilities show consistently low staffing (“red flags”)?**
+#### **10. Which facilities show consistently low staffing (“red flags”)?**
 (Facilities at the bottom of national staffing levels.)
 
-### **11. Which facilities show unusual spikes or drops in staffing?**
+#### **11. Which facilities show unusual spikes or drops in staffing?**
 (These may indicate reporting issues or operational instability.)
 
-## CENSUS & STAFFING RELATIONSHIP
+### CENSUS & STAFFING RELATIONSHIP
 
-### **12. How strongly is resident census related to staffing levels?**
+#### **12. How strongly is resident census related to staffing levels?**
 (Are high-census facilities providing enough care?)
 
-### **13. Which facilities have many residents but low staffing?**
+#### **13. Which facilities have many residents but low staffing?**
 (These will be highlighted as high-risk facilities.)
 
-## DATA QUALITY & REPORTING CHECKS
+### DATA QUALITY & REPORTING CHECKS
 
-### **14. Do facilities with missing or invalid Provider IDs show different staffing patterns?**
+#### **14. Do facilities with missing or invalid Provider IDs show different staffing patterns?**
 (This helps detect reporting problems.)
 
-### **15. Are there abnormal zeros, sudden jumps, or strange values?**
+#### **15. Are there abnormal zeros, sudden jumps, or strange values?**
 (Such anomalies often reveal reporting errors.)
 
-### **16.Are some facilities reporting unrealistic values?**
+#### **16.Are some facilities reporting unrealistic values?**
 (We check for impossible or suspicious patterns.)
 
-## ADVANCED STAFFING ANALYTICS
+### ADVANCED STAFFING ANALYTICS
 
-### **17. Are some facilities substituting staff types?**
+#### **17. Are some facilities substituting staff types?**
 (Example: Using more CNAs instead of RNs or vice versa.)
 
-### **18. Which facilities fall in the top and bottom 5% of staffing quality?**
+#### **18. Which facilities fall in the top and bottom 5% of staffing quality?**
 (Creating a national “watch list” and “excellence list.”)
 
-### **19. How do all staffing roles relate to each other?**
+#### **19. How do all staffing roles relate to each other?**
 (Full correlation matrix across RN, LPN, CNA, NA trainees, Med Aides.)
 
-### **20. What is the overall staffing quality score for each state?**
+#### **20. What is the overall staffing quality score for each state?**
 (A composite metric combining staffing levels, mix, and consistency.)
 
 These 20 questions give a complete, multi-angle understanding of staffing quality,
@@ -146,7 +146,7 @@ for Q2 2024.
 
 ***
 
-## **Question 1 What is the National Average HPRD?** This analysis answers a core staffing question:
+### **Question 1 What is the National Average HPRD?** This analysis answers a core staffing question:
 
 **What is the national average number of nursing care hours provided per resident per day**, broken down by:
 - **RN HPRD** (Registered Nurse hours per resident per day)
@@ -206,7 +206,7 @@ Notes for reporting and follow-up
 Use these national figures as the baseline for the next analyses: state comparisons, facility outlier detection, weekday/weekend splits, and staffing-versus-census correlations.
 When reporting to stakeholders, present RN, LPN, and CNA HPRD together with outcome indicators to make the case for targeted investment in clinical staffing.
 
-## **Q2 How is the HPRD distribution across all facilities**
+### **Q2 How is the HPRD distribution across all facilities**
 
 This question examines the frequency distribution of the primary staffing metric, Total Hours Per Resident Day (HPRD), across all 14,564 facilities and 1.3 million daily records.
 
@@ -250,7 +250,7 @@ The Q2 2024 HPRD distribution illustrates a stable national staffing landscape a
 This marks the foundation for deeper analyses in the following questions, including state comparisons, facility outlier identification, weekday–weekend patterns, and census-adjusted staffing evaluations.
 
 
-## **Q3 What percentage of facilities meet CMS expected staffing levels?**
+### **Q3 What percentage of facilities meet CMS expected staffing levels?**
 
 This analysis evaluates national compliance against CMS standards. We use the **National HPRD Minimums** that CMS applies for regulatory oversight and quality star rating calculations.
 
@@ -313,7 +313,7 @@ RN coverage is insufficient nationwide, with only one-quarter of facilities meet
 
 Addressing RN shortages represents the most impactful pathway toward improving resident safety, reducing citations, and enhancing quality outcomes. These findings set a clear foundation for the next stages of analysis,including state-level comparisons, regional trends, and identification of high-risk facility groups.
 
-## **Q4 What is the Average HPRD by State?**
+### **Q4 What is the Average HPRD by State?**
 
 This question aims to determine how nursing staffing levels vary across the United States. It establishes a state-by-state benchmark for the **Total HPRD** (Total Hours Per Resident Day) provided to residents.
 
@@ -347,7 +347,7 @@ Allocate training investments, clinical ladder programs, and workforce developme
 ## **Conclusion**
 State-level HPRD results reveal significant geographic disparities in nursing care capacity. Some states maintain robust staffing structures, while others operate lean models that may challenge quality and safety expectations. These findings highlight the need for tailored, state-specific strategies to improve staffing adequacy, strengthen clinical oversight, and promote equitable care across regions. This state benchmark will inform deeper analysis in upcoming questions, including facility outliers, census-adjusted staffing, and weekday–weekend performance patterns.
 
-## **Q5 What is the RN–LPN–CNA Skill Mix by State?**
+### **Q5 What is the RN–LPN–CNA Skill Mix by State?**
 
 This question examines how each U.S. state distributes its nursing workforce across the three core staffing roles:
 
@@ -373,7 +373,7 @@ Strengthen RN capacity in low-RN states Implement RN recruitment incentives, dif
 The RN–LPN–CNA skill mix varies significantly across states, revealing structural differences in nursing workforce distribution and clinical capacity. CNA hours dominate nationwide, but RN presence—critical for clinical oversight—is uneven and often insufficient. States that rely heavily on LPNs may maintain operational continuity but risk gaps in higher-level clinical judgement. This analysis highlights where targeted investments, staffing interventions, and policy supports are most needed. These insights will directly inform upcoming questions that examine facility-level variation, census-adjusted staffing, and correlations between staffing patterns and quality outcomes.
 
 
-## **Q6 Which states are the best and worst staffed overall?**
+### **Q6 Which states are the best and worst staffed overall?**
 
 This question identifies the top 10 and bottom 10 states for overall staffing quality in Q2 2024, using Total Hours Per Resident Day (HPRD) as the primary metric.
 
@@ -412,7 +412,7 @@ Allocate Funding and Training Resources Strategically Federal and state agencies
 ## **Conclusion**
 The comparison of best-staffed and worst-staffed states reveals substantial geographic differences in total nursing hours available to residents. While some states operate with strong staffing infrastructures, others rely on significantly leaner care models that may compromise resident safety and compliance performance. These findings underscore the need for targeted, state-specific workforce interventions and reinforce the importance of using HPRD levels as a key national benchmark for long-term care quality.
 
-## **Q7-Regional staffing patterns (Northeast, South, Midwest, West)**
+### **Q7-Regional staffing patterns (Northeast, South, Midwest, West)**
 This question aims to analyze how nursing staffing levels vary by region in the United States. Using the census-based regional grouping (Northeast, South, Midwest, West), we will calculate regional averages for:
 
 **RN HPRD**
@@ -476,14 +476,14 @@ Its unique staffing structure would distort U.S. regional averages and should be
 ## **Conclusion**
 Regional staffing analysis reveals deep structural differences in nursing labor distribution across the United States. The West offers the strongest overall staffing support, while the South faces clear RN shortages that may impact clinical quality and outcomes. The Northeast maintains the most balanced professional mix with strong LPN and CNA contributions, and the Midwest remains stable though modest in intensity. Territory results highlight non-comparable models that require separate evaluation. These findings provide essential context for workforce planning, CMS benchmarking.
 
-## **Q8 How does total staffing change day-by-day throughout Q2?**
+### **Q8 How does total staffing change day-by-day throughout Q2?**
 
 This analysis examines daily staffing hours across the entire quarter (April 1 to June 30, 2024) to detect trends, seasonality, and systemic operational patterns.
 
 ![](Q8_daily_staffing_trend_with_weekends.png)
 ***
 
-#### Key Insight
+## **Key Insight**
 - **Stable Weekday Hours:** The total nursing hours provided across the nation show high stability on weekdays, fluctuating only slightly with census.
 - **Consistent Weekend Drop:** A systemic, **cyclical drop in staffing hours** is observed every Saturday and Sunday. This weekend dip is a consistent and predictable operational pattern, resulting from lower administrative staffing and higher reliance on contracted/PRN weekend staff.
 
@@ -497,7 +497,7 @@ The weekend staffing deficit is a well-documented quality-of-care risk. Lower we
 #### Conclusion
 The Q2 2024 daily trend confirms a persistent, national operational weakness characterized by lower weekend staffing. This pattern must be addressed through targeted compensation and regulatory requirements to eliminate the 'weekend effect' on resident safety and quality of care.
 
-## **Q9 How does staffing differ between Weekdays vs Weekends??**
+### **Q9 How does staffing differ between Weekdays vs Weekends??**
 
 This question quantifies the average difference in HPRD (Hours Per Resident Day) between weekdays (Monday-Friday) and weekends (Saturday-Sunday) to isolate the 'weekend effect.'
 
@@ -550,7 +550,7 @@ Decision-makers should view this pattern as a compliance and quality signal, not
 ## **Recommendations**
 Strengthen weekend RN coverage Implement staggered scheduling, weekend differential pay, or incentive structures to prevent dips
 
-## **Q10 Which facilities show consistently low staffing (“red flags”)?**
+### **Q10 Which facilities show consistently low staffing (“red flags”)?**
 
 ![](Q10A_critical_redflag_states_top15.png)
 ![](Q10B_understaffed_below5_states_top15.png)
@@ -620,7 +620,7 @@ Moderately understaffed facilities require proactive support.
 State-level trends highlight where systemic issues are most urgent.
 Overall, these findings reinforce the importance of consistent staffing monitoring and targeted resource allocation to protect resident safety and improve nationwide nursing home performance.
 
-## **Q 11. Which facilities show unusual staffing variability?**
+### **Q 11. Which facilities show unusual staffing variability?**
 
 ![](q11_facility_variability_scatter.png)
 ***
@@ -699,7 +699,7 @@ Question 11 highlights a small yet important subset of facilities whose staffing
 
 Monitoring staffing variability is a valuable quality-assurance tool. By identifying and addressing inconsistent patterns early, organizations can improve workforce reliability, reduce operational risks, and ultimately enhance resident outcomes.
 
-## **Q12.	How strongly is Census correlated with HPRD??**
+### **Q12.	How strongly is Census correlated with HPRD??**
 
 This question examines the correlation between a facility's average resident **Census** (number of residents) and its average **Total HPRD** (staffing level).
 
@@ -776,7 +776,7 @@ Census and HPRD show a very weak negative relationship, indicating that faciliti
 Monitoring this relationship is important for operational planning, risk management, and regulatory readiness. Ensuring appropriate staffing at all census levels helps protect resident care quality and supports compliance expectations.
 
 
-## **Q13 Which facilities have high resident census but low staffing (High-Risk)?**
+### **Q13 Which facilities have high resident census but low staffing (High-Risk)?**
 
 This question identifies facilities where **high resident volume** is paired with **low staffing levels** (low HPRD), creating a high-risk operational environment.
 
@@ -869,7 +869,7 @@ Supporting compliance with CMS staffing expectations
 This analysis provides a data-driven basis for targeted intervention and continuous staffing improvement.
 
 
-## **Q14.	Do facilities with missing Provider IDs (PROVNUM) differ in staffing?**
+### **Q14.	Do facilities with missing Provider IDs (PROVNUM) differ in staffing?**
 
 This quality check verifies that the unique facility identifier (`PROVNUM`) is present and correctly formatted across all 1.3 million daily records.
 
@@ -895,7 +895,7 @@ Even though no issues were found, we propose the following actions for ongoing d
 2. **Monitor future quarterly submissions** Missing Provider IDs can occur during system transitions or staffing changes. Routine validation helps ensure consistent data linkage.
 3. **Document completeness as part**
 
-## **Q15 Are there abnormal zeros, sudden jumps, or strange values?**
+### **Q15 Are there abnormal zeros, sudden jumps, or strange values?**
 
 This data quality check identifies non-physical, non-reported, or suspicious values in the staffing hours data, which often indicate reporting errors (e.g., system downtime, payroll lag, or data entry mistakes).
 
@@ -1017,7 +1017,7 @@ Compliance readiness
 Overall confidence in the dataset
 This question underscores the importance of robust data integrity practices in healthcare staffing analytics.
 
-## **Q16.	Are some facilities reporting unrealistic values?**
+### **Q16.	Are some facilities reporting unrealistic values?**
 
 This quality check identifies facilities reporting HPRD figures so high that they are statistically impossible or highly suspicious of data entry errors. We use the 99th percentile as the extreme outlier threshold.
 
@@ -1117,7 +1117,7 @@ The facility-level review confirms that some facilities are reporting unrealisti
 Addressing this requires a mix of automated validation, targeted audits, and facility support/training. By implementing the recommendations above, organizations can substantially improve PBJ data integrity - which in turn increases the reliability of staffing analytics, strengthens compliance, and protects residents through better-informed staffing oversight.
 
 
-## **Q17.	Staffing Mix Efficiency: Are facilities substituting RN/LPN/CNA hours?**
+### **Q17.	Staffing Mix Efficiency: Are facilities substituting RN/LPN/CNA hours?**
 
 This question uses correlation analysis to determine if facilities are intentionally replacing higher-skilled, more expensive staff (RNs) with lower-skilled staff (LPNs or CNAs) due to cost pressures or shortages.
 
@@ -1146,7 +1146,7 @@ The positive correlation suggests that staffing models are generally **coordinat
 
 The Q2 2024 PBJ data shows **no substitution** occurring between RN, LPN, or CNA roles. All staffing categories trend positively together, demonstrating stable, coordinated staffing models rather than replacement strategies. Facilities appear to maintain appropriate role differentiation consistent with regulatory expectations.
 
-## **18.Top & Bottom 5% facilities - “Watch list” analysis**
+### **18.Top & Bottom 5% facilities - “Watch list” analysis**
 
 This question identifies the national extremes in staffing performance: the **Excellence List** (top 5% by Total HPRD) and the **Critical Watch List** (bottom 5% by Total HPRD).
 
@@ -1260,7 +1260,7 @@ The Top & Bottom 5% Watchlist methodology successfully identifies facilities ope
 By focusing regulatory attention on these two outlier groups, CMS and oversight bodies can improve quality of care, reduce reporting inconsistencies, and enhance national staffing transparency.
 
 
-## **19. How do all staffing roles relate to each other?**
+### **19. How do all staffing roles relate to each other?**
 
 This analysis computes a full **correlation matrix** across all staffing roles (RN, LPN, CNA, NA Trainees, Medication Aides) to understand the professional relationship structure within the nursing workforce.
 
@@ -1314,7 +1314,7 @@ Color intensity shows strength: darker = stronger positive correlation.
 Values near **+1** mean the two fields rise together; values near **0** indicate weak/no linear relationship.
 
 
-## **20. What is the overall staffing quality score for each state?**
+### **20. What is the overall staffing quality score for each state?**
 
 This question creates a multi-layered **Staffing Quality Score** for all 50 states to move beyond simple HPRD and account for quality factors like skill mix and stability.
 
