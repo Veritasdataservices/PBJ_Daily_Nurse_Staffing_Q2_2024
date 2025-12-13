@@ -1282,21 +1282,51 @@ This analysis computes a full **correlation matrix** across all staffing roles (
 ![](q19_staffing_correlation_heatmap.png)
 ***
 
-#### Key Insight
+## **Process overview — How this analysis was performed**
+Fields used: Hrs_RN, Hrs_LPN, Hrs_CNA, Total_Nurse_Hours, HPRD_Total.
+Validation: Confirmed fields exist, are numeric, and contain no negative values. Zero entries were retained (they reflect reporting patterns).
+Computation: Calculated Pearson correlation coefficients for each pair of fields.
+Pearson correlation measures linear association: +1.0 = perfect positive, 0.0 = no linear relationship, −1.0 = perfect negative.
+Visualization: Results displayed as a heatmap (cells show coefficients and color intensity). Color bar maps color → correlation strength.
+Key numeric results (Pearson r)
+Hrs_CNA ↔ Total_Nurse_Hours: 0.97
+Hrs_LPN ↔ Total_Nurse_Hours: 0.80
+Hrs_RN ↔ Total_Nurse_Hours: 0.67
+Hrs_LPN ↔ Hrs_CNA: 0.73
+Hrs_RN ↔ Hrs_CNA: 0.62
+Hrs_RN ↔ Hrs_LPN: 0.28
+Role hours ↔ HPRD_Total: weak (≈ 0.06–0.18)
+All numbers are Pearson correlation coefficients between the named variables.
 
-- **Strongest Positive Correlation:** LPN hours and CNA hours show the strongest positive correlation ($r = 0.58$), confirming that these two high-volume care roles scale together most closely.
-- **Moderate Positive Correlation:** RN hours maintain a moderate positive correlation with LPN ($r=0.52$) and CNA ($r=0.28$) hours, reinforcing the Q17 finding that substitution is not systemic; facilities staff up or down across all licensed roles generally together.
-- **Weakest Correlation:** NA Trainee hours show the weakest correlations, suggesting the use of trainees is highly inconsistent and independent of the facility's core staffing model.
+Plain-language interpretation (what the chart shows at a glance)
+CNA hours are the primary driver of total nurse hours (r = 0.97). When total nursing hours rise, CNA hours almost always rise too.
+LPN hours are also strongly associated with total hours (r = 0.80).
+RN hours increase with total staffing but less strongly (r = 0.67). RNs are present, but their hours do not scale as tightly as CNA/LPN.
+RN and LPN hours have a low direct relationship (r = 0.28) — there is no consistent pattern of RN↔LPN substitution.
+HPRD (hours-per-resident-day) correlates weakly with role-level hours because it is normalized by census; role-mix and census both affect it.
 
-#### Professional interpretation (stakeholder friendly)
-The correlation matrix reveals a workforce that is generally stable and complementary. The roles are largely used in coordination, with staffing levels rising and falling together. The low correlation for NA Trainees suggests that these developmental roles are not a reliable part of the core staffing equation and may only be utilized as sporadic, non-essential staffing.
+## **Insight - healthcare-analytics interpretation**
+Workforce behavior is CNA-driven. CNAs account for the majority of variation in total nursing hours nationally. Monitoring CNA staffing is therefore critical for operational capacity and day-to-day care delivery.
+LPNs are a major secondary contributor; they tend to scale with total nurse capacity.
+RNs are less elastic: RN hours do not substitute for LPN/CNA hours in a consistent linear way,increasing RN hours is not matched by a predictable decrease in LPN/CNA hours (and vice versa).
 
-### Recommendations
-1. **Strengthen Trainee Program:** Management should analyze why NA Trainee hours are so weakly correlated, aiming to integrate this workforce pipeline more consistently into the core staffing model.
-2. **Focus on Licensed Roles:** Interventions should continue to focus on the Licensed Staff (RN/LPN) and CNA roles, as they represent the stable, core structure of resident care.
+HPRD alone is insufficient to evaluate role adequacy; use HPRD paired with role-level measures (e.g., RN-hours-per-100-residents).
+Recommendations (actionable & regulation-aware)
+Make CNA metrics central in operational dashboards - flag sudden CNA drops or spikes because they drive total capacity.
+Monitor RN coverage separately for clinical risk: RN shortages should trigger targeted clinical reviews rather than assumption-based substitutions.
+Combine role-level ratios with HPRD when building quality/compliance alerts (e.g., low RN-hours-per-100-residents + low HPRD → higher priority).
+Create two alert types for monitoring systems:
+Role-mix anomalies (e.g., unusually low RN proportion given acuity indicators).
+Total-hours anomalies driven by CNA/LPN changes (since these drive total staffing).
+Prioritize CNA retention/rostering interventions for near-term improvements in staffing reliability; address RN shortages by recruitment/training strategies.
 
-#### Conclusion
-The correlation matrix validates the overall structural integrity of the national staffing model, where roles are generally complementary. The data highlights a potential missed opportunity in integrating the NA trainee workforce consistently.
+## **Conclusion**
+CNA and LPN hours scale closely with total nursing hours, while RN hours are less tightly coupled and do not substitute reliably for LPN/CNA work. HPRD is a useful normalization but must be read alongside role-level metrics to properly assess staffing adequacy, clinical risk, and regulatory compliance.
+
+**How to read the heatmap**
+Cell value = Pearson r (linear correlation).
+Color intensity shows strength: darker = stronger positive correlation.
+Values near **+1** mean the two fields rise together; values near **0** indicate weak/no linear relationship.
 
 
 ## **20. What is the overall staffing quality score for each state?**
