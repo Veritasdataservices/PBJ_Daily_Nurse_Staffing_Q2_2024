@@ -1505,9 +1505,9 @@ Once completed, the dashboard will be embedded here to provide dynamic filtering
 
 (1.) ## **National Staffing Overview (Q2 2024)**
 
-    ***
+    
 
-![](pbi_q1_q3_national_staffing_overview.png)
+![](pbj_q1_q3_national_staffing_overview.png)
 
 
 
