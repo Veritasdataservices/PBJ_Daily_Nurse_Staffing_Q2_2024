@@ -1503,10 +1503,11 @@ This provides a more complete and responsible picture of national staffing perfo
 A full interactive Power BI dashboard for the PBJ_Daily_Nurse_Staffing_Q2 2024 project is currently in development.
 Once completed, the dashboard will be embedded here to provide dynamic filtering, drill-through views, and state-to-facility-level exploration.
 
-(1.) ## National Staffing Overview (Q2 2024)
-     ***
+(1.) ## **National Staffing Overview (Q2 2024)**
 
-![National Staffing Overview](images/pbi_q1_q3_national_staffing_overview.png)
+    ***
+
+![](pbi_q1_q3_national_staffing_overview.png)
 
 
 
