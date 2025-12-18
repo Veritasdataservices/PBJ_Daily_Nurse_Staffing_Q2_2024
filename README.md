@@ -1509,6 +1509,10 @@ Once completed, the dashboard will be embedded here to provide dynamic filtering
 
 ![](pbj_q1_q3_national_staffing_overview.png)
 
+## **2. State and Region Staffing Analysis (Q2 2024)**
+
+![](pbj_state_region_q4_q7.png)
+
 
 
 ---
