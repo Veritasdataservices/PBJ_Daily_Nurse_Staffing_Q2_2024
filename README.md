@@ -13,8 +13,7 @@ This project, conducted by Veritas Data Services, transforms this large administ
 Contains the full data engineering workflow, including raw CMS PBJ data ingestion, data type corrections, missing-value handling, anomaly detection, creation of HPRD and staffing metrics, and final dataset validation.
 Full Analysis & Visualization
 
-### **Veritas Data Services : PBJ Daily Nurse Staffing Q2 2024** Full Analysis,Visualization,code,insight,recommendation and conclusion of all 20 questions this file name above. 
-
+### **Veritas Data Services : PBJ Daily Nurse Staffing Q2 2024** Full Analysis,Visualization,code,insight,recommendation and conclusion of all 20 questions check the raw file above. 
 **(PBJ_Daily_Nurse_Staffing_Q2_2024_Final.ipynb)**
 
 Contains all analytical logic for Questions 1–20, including calculations, statistical methods, chart generation, and healthcare-focused interpretations used throughout this project.
