@@ -552,7 +552,7 @@ Strengthen weekend RN coverage Implement staggered scheduling, weekend different
 
 ### **Q10 Which facilities show consistently low staffing (“red flags”)?**
 
-![](q10_bottom_30cms_low_hprd_facilities.png)
+![](q10_bottom_30_cms_low_hprd_facilities.png)
 ***
 ## Q10. Which Facilities Are Critical Low-HPRD Red Flags?
 
