@@ -554,7 +554,6 @@ Strengthen weekend RN coverage Implement staggered scheduling, weekend different
 
 ![](q10_bottom_30_cms_low_hprd_facilities.png)
 ***
-## Q10. Which Facilities Are Critical Low-HPRD Red Flags?
 
 ### Executive Summary
 This analysis identifies **U.S. nursing facilities whose average staffing levels fall below the CMS minimum staffing standard** for Q2 2024. Facilities below this threshold are classified as **Critical Low-HPRD Red Flags**, indicating elevated operational, clinical, and regulatory risk.
