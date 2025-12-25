@@ -558,7 +558,7 @@ Strengthen weekend RN coverage Implement staggered scheduling, weekend different
 ### Executive Summary
 This analysis identifies **U.S. nursing facilities whose average staffing levels fall below the CMS minimum staffing standard** for Q2 2024. Facilities below this threshold are classified as **Critical Low-HPRD Red Flags**, indicating elevated operational, clinical, and regulatory risk.
 
-Out of **14,600 nursing facilities** analyzed nationwide, **112 facilities** failed to meet the CMS minimum staffing requirement.  
+Out of **14,600 nursing facilities** analyzed nationwide, **110 facilities** failed to meet the CMS minimum staffing requirement.  
 To maintain clarity and avoid misrepresentation, this report highlights:
 - The **Bottom 10 worst-staffed facilities** (most severe understaffing)
 - A **Bottom 30 subset** for risk prioritization (used in visualization)
@@ -626,7 +626,7 @@ This approach ensures the analysis is **transparent, reproducible, and aligned w
 ## Key Findings
 
 - **Total facilities analyzed:** 14,600  
-- **Facilities below CMS minimum:** 112  
+- **Facilities below CMS minimum:** 110  
 - **Lowest observed Average HPRD:** 0.16  
 - Several facilities operate at **less than 25% of the CMS minimum staffing level**
 
