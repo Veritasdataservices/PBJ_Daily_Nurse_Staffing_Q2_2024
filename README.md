@@ -1571,7 +1571,7 @@ This provides a more complete and responsible picture of national staffing perfo
 
 
 
-## **Power BI Dashboard (Coming Soon)**
+## **Power BI Reports and Excutive Dashboard (in progress)**
 
 A full interactive Power BI dashboard for the PBJ_Daily_Nurse_Staffing_Q2 2024 project is currently in development.
 Once completed, the dashboard will be embedded here to provide dynamic filtering, drill-through views, and state-to-facility-level exploration.
