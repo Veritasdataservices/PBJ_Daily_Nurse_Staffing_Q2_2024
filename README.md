@@ -697,6 +697,8 @@ Addressing these staffing gaps is essential to safeguarding resident care, regul
 
 ![](q11_facility_variability_scatter.png)
 ***
+**NOTE**
+*Python Analysis was conducted at the daily record level to validate statistical relationships,while Power BI visualization of this question aggregate to the facility level to support excutive interpretation.Both views consistently show a very weak negative relationship between census size and HPRD.*
 
 This analysis identifies facilities with high **coefficient of variation (CV)** in their daily Total HPRD, signifying operational instability (large, frequent swings between high and low staffing days).
 
