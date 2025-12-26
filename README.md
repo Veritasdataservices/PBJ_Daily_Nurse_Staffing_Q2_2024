@@ -1593,6 +1593,10 @@ Once completed, the dashboard will be embedded here to provide dynamic filtering
 
 ![](screenshort3.png)
 
+## **4. Census Effects (Q2 2024)**
+
+![](screenshort4.png)
+
 
 
 ---
