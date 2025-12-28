@@ -2,6 +2,11 @@
 ## PBJ Daily Nurse Staffing-Q2 2024 (CMS)
 ### Project Introduction & Analysis Plan
 
+(**Lead Analyst: Sharon Mwandoe**)
+
+#### NOTE:
+**This project utilizes a python-First architecture to ensure 100% data integrity and auditability. While power BI provides the live excecutive interface, the underlying logic is handled in python to prevent "black box" errors and maintain a clean reproducible data trail**
+
 The Payroll-Based Journal (PBJ) Daily Nurse Staffing Q2 2024 dataset, published by the Centers for Medicare & Medicaid Services (CMS), provides facility-level daily staffing and census data for U.S. nursing homes. This dataset is essential for regulatory oversight, quality measurement, and staffing compliance evaluation.
 
 This project, conducted by Veritas Data Services, transforms this large administrative dataset into clear, actionable insights that help stakeholders understand staffing levels, operational patterns, and care delivery risks across facilities.
@@ -1101,7 +1106,7 @@ This quality check identifies facilities reporting HPRD figures so high that the
 
 ***
 
-![](q16_unrealistic_facility_coounts_corrected.png)
+![](q16_unrealistic_facility_counts_corrected.png)
 
 ***
 
