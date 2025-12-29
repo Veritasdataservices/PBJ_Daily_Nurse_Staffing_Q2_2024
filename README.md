@@ -5,7 +5,8 @@
 (**Lead Analyst: Sharon Mwandoe**)
 
 #### NOTE:
-**This project utilizes a python-First architecture to ensure 100% data integrity and auditability. While power BI provides the live excecutive interface, the underlying logic is handled in python to prevent "black box" errors and maintain a clean reproducible data trail**
+**This project utilizes a python-First architecture to ensure 100% data integrity and auditability. While power BI provides the live excecutive interface, the underlying logic is handled in python to prevent "black box" errors and maintain a clean reproducible data trail
+### interactive dashboards are intentionally not publicly embedded Due to data sensitivity and governance considerations, this project presents validated static visuals and reproducible python analysis as the source of truth. LIVE POWER BI ACCESS IS AVAILABLE UPON REQUEST**
 
 The Payroll-Based Journal (PBJ) Daily Nurse Staffing Q2 2024 dataset, published by the Centers for Medicare & Medicaid Services (CMS), provides facility-level daily staffing and census data for U.S. nursing homes. This dataset is essential for regulatory oversight, quality measurement, and staffing compliance evaluation.
 
@@ -1629,8 +1630,6 @@ This provides a more complete and responsible picture of national staffing perfo
 
 ## **Power BI Reports and Excutive Dashboard (in progress)**
 
-A full interactive Power BI dashboard for the PBJ_Daily_Nurse_Staffing_Q2 2024 project is currently in development.
-Once completed, the dashboard will be embedded here to provide dynamic filtering, drill-through views, and state-to-facility-level exploration.
 
 ## **1. National Staffing Overview (Q2 2024)**
 
