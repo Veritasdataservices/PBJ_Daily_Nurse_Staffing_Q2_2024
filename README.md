@@ -2,7 +2,7 @@
 ## PBJ Daily Nurse Staffing-Q2 2024 (CMS)
 ### Project Introduction & Analysis Plan
 
-(**Lead Analyst: Sharon Mwandoe**)
+(**Lead Analyst - Sharon Mwandoe**)
 
 #### NOTE:
 **This project utilizes a python-First architecture to ensure 100% data integrity and auditability. While power BI provides the live excecutive interface, the underlying logic is handled in python to prevent "black box" errors and maintain a clean reproducible data trail**
