@@ -1279,6 +1279,8 @@ The Q2 2024 PBJ data shows **no substitution** occurring between RN, LPN, or CNA
 ### **18.Top & Bottom 5% facilities - “Watch list” analysis**
 
 This question identifies the national extremes in staffing performance: the **Excellence List** (top 5% by Total HPRD) and the **Critical Watch List** (bottom 5% by Total HPRD).
+#### NOTE:
+**Facilities were included in the analysis if they reported valid HPRD values on at least one day during the quarter; facilities with no reportable staffing activity across the entire quarter were excluded from percentile ranking.**
 
 ![](q18_facility_counts_top_bottom_5_with_legend.png)
 ![](q18_hprd_distribution_corrected.png)
