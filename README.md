@@ -1655,7 +1655,7 @@ This provides a more complete and responsible picture of national staffing perfo
 
 ![](screenshort5.png)
 
-## **6. Staff and Advanced Analytics
+## **6. Staff and Advanced Analytics**
 
 ![](screenshot6.png)
 
@@ -1663,6 +1663,8 @@ This provides a more complete and responsible picture of national staffing perfo
 
 ---
 **Sharon Mwandoe - Lead Data Analyst**
+
+
 **© 2025 Veritas Data Services. All rights reserved.**
 
 
