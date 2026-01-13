@@ -1655,6 +1655,10 @@ This provides a more complete and responsible picture of national staffing perfo
 
 ![](screenshort5.png)
 
+## **6. Staff and Advanced Analytics
+
+![](screenshot6.png)
+
 
 
 ---
