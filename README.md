@@ -89,7 +89,7 @@ Below are the key questions this analysis will answer. These questions are writt
 ###### **4. How do average staffing levels differ from state to state?**
 (Some states may consistently staff better or worse than others.)
 
-#### **5. What does each state’s skill mix look like?**
+##### **5. What does each state’s skill mix look like?**
 (How much care comes from RNs vs LPNs vs CNAs in each state?)
 
 ###### **6. Which states are the best and worst staffed overall?**
@@ -156,7 +156,8 @@ For regulatory review, audit readiness, and reproducibility, all calculations, t
 
 ## Executive Summary - National Staffing Overview (Q2 2024)
 
-![](dashboardsreenshot.png)
+
+![](ashboardsreenshot.png)
 
 ***
 
