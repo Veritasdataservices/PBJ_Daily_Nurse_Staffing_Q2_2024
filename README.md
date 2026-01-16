@@ -4,7 +4,7 @@
 
 (**Lead Analyst - Sharon Mwandoe**)
 
-#### NOTE:
+###### NOTE:
 **This project utilizes a python-First architecture to ensure 100% data integrity and auditability. While power BI provides the live excecutive interface, the underlying logic is handled in python to prevent "black box" errors and maintain a clean reproducible data trail**
 **interactive dashboards are intentionally not publicly embedded Due to data sensitivity and governance considerations, this project presents validated static visuals and reproducible python analysis as the source of truth. LIVE POWER BI ACCESS IS AVAILABLE UPON REQUEST**
 
@@ -12,14 +12,13 @@ The Payroll-Based Journal (PBJ) Daily Nurse Staffing Q2 2024 dataset, published 
 
 This project, conducted by Veritas Data Services, transforms this large administrative dataset into clear, actionable insights that help stakeholders understand staffing levels, operational patterns, and care delivery risks across facilities.
 
-### Veritas Data Services : PBJ Daily Nurse Staffing Q2 2024 – Data Cleaning & Validation Pipeline, check the name of this file name above
-
+##### Veritas Data Services : PBJ Daily Nurse Staffing Q2 2024 – 
 **(PBJ_Daily_Nurse_Staffing_Q2_2024_Cleaning_Pipeline.ipynb)**
 
 Contains the full data engineering workflow, including raw CMS PBJ data ingestion, data type corrections, missing-value handling, anomaly detection, creation of HPRD and staffing metrics, and final dataset validation.
 Full Analysis & Visualization
 
-### **Veritas Data Services : PBJ Daily Nurse Staffing Q2 2024** Full Analysis,Visualization,code,insight,recommendation and conclusion of all 20 questions check the raw file above. 
+##### **Veritas Data Services : PBJ Daily Nurse Staffing Q2 2024**  
 **(PBJ_Daily_Nurse_Staffing_Q2_2024_Final.ipynb)**
 
 Contains all analytical logic for Questions 1–20, including calculations, statistical methods, chart generation, and healthcare-focused interpretations used throughout this project.
@@ -40,7 +39,7 @@ The cleaning pipeline notebook serves as the single source of truth for dataset 
 * **Review all transformations** from raw CMS PBJ data to final insights
 * **Inspect code quality**, methodological consistency, and analytic rigor
 
-### Dataset Overview
+##### Dataset Overview
 
 After extraction and cleaning, the dataset contains:
 
@@ -58,7 +57,7 @@ After extraction and cleaning, the dataset contains:
 - Employee vs Contract hours
 - Derived metrics including Total Hours and HPRD (Hours per Resident Day)
 
-### Analysis Framework
+##### Analysis Framework
 
 The analysis is organized into 20 professional, stakeholder-focused questions designed to capture staffing sufficiency, state-level patterns, outliers, workforce mix, and operational risks.
 
@@ -69,88 +68,112 @@ These insights support decision-making for:
 - Staffing directors
 - Policy and regulatory teams
 
-## PBJ Daily Nurse Staffing-Q2 2024
-### Official Analysis Questions (Stakeholder-Friendly Version)
+#### PBJ Daily Nurse Staffing-Q2 2024
+##### Official Analysis Questions (Stakeholder-Friendly Version)
 
 Below are the key questions this analysis will answer. These questions are written in clear, non-technical language so that any reader including non-analysts can understand the purpose and value of each part of the study.
 
-### NATIONAL STAFFING LEVELS
+##### NATIONAL STAFFING LEVELS
 
-#### **1. What is the national average amount of nursing care each resident receives per day?**
+###### **1. What is the national average amount of nursing care each resident receives per day?**
 (We will calculate the Hours Per Resident Day-HPRD for RN, LPN, CNA, and Total.)
 
-#### **2. How are staffing levels distributed across all nursing homes nationwide?**
+###### **2. How are staffing levels distributed across all nursing homes nationwide?**
 (Are most facilities low, average, or high in the amount of care they provide?)
 
-#### **3. What percentage of facilities meet or fall below expected staffing requirements?**
+###### **3. What percentage of facilities meet or fall below expected staffing requirements?**
 (Helps identify whether staffing is generally adequate across the country.)
 
-### STATE & REGIONAL COMPARISONS
+##### STATE & REGIONAL COMPARISONS
 
-#### **4. How do average staffing levels differ from state to state?**
+###### **4. How do average staffing levels differ from state to state?**
 (Some states may consistently staff better or worse than others.)
 
 #### **5. What does each state’s skill mix look like?**
 (How much care comes from RNs vs LPNs vs CNAs in each state?)
 
-#### **6. Which states are the best and worst staffed overall?**
+###### **6. Which states are the best and worst staffed overall?**
 (Top 10 and bottom 10 states based on total HPRD.)
 
-#### **7. Do different U.S. regions show unique staffing patterns?**
+###### **7. Do different U.S. regions show unique staffing patterns?**
 (Northeast vs South vs Midwest vs West.)
 
-### FACILITY-LEVEL OPERATIONS
+##### FACILITY-LEVEL OPERATIONS
 
-#### **8. How does total staffing change day-by-day throughout Q2?**
+###### **8. How does total staffing change day-by-day throughout Q2?**
 (We will look at trends from April to June.)
 
-#### **9. Do facilities staff differently on weekdays compared to weekends?**
+###### **9. Do facilities staff differently on weekdays compared to weekends?**
 (A common quality-of-care issue.)
 
-#### **10. Which facilities show consistently low staffing (“red flags”)?**
+###### **10. Which facilities show consistently low staffing (“red flags”)?**
 (Facilities at the bottom of national staffing levels.)
 
-#### **11. Which facilities show unusual spikes or drops in staffing?**
+###### **11. Which facilities show unusual spikes or drops in staffing?**
 (These may indicate reporting issues or operational instability.)
 
-### CENSUS & STAFFING RELATIONSHIP
+##### CENSUS & STAFFING RELATIONSHIP
 
-#### **12. How strongly is resident census related to staffing levels?**
+###### **12. How strongly is resident census related to staffing levels?**
 (Are high-census facilities providing enough care?)
 
-#### **13. Which facilities have many residents but low staffing?**
+###### **13. Which facilities have many residents but low staffing?**
 (These will be highlighted as high-risk facilities.)
 
-### DATA QUALITY & REPORTING CHECKS
+##### DATA QUALITY & REPORTING CHECKS
 
-#### **14. Do facilities with missing or invalid Provider IDs show different staffing patterns?**
+###### **14. Do facilities with missing or invalid Provider IDs show different staffing patterns?**
 (This helps detect reporting problems.)
 
-#### **15. Are there abnormal zeros, sudden jumps, or strange values?**
+###### **15. Are there abnormal zeros, sudden jumps, or strange values?**
 (Such anomalies often reveal reporting errors.)
 
-#### **16.Are some facilities reporting unrealistic values?**
+###### **16.Are some facilities reporting unrealistic values?**
 (We check for impossible or suspicious patterns.)
 
-### ADVANCED STAFFING ANALYTICS
+##### ADVANCED STAFFING ANALYTICS
 
-#### **17. Are some facilities substituting staff types?**
+###### **17. Are some facilities substituting staff types?**
 (Example: Using more CNAs instead of RNs or vice versa.)
 
-#### **18. Which facilities fall in the top and bottom 5% of staffing quality?**
+###### **18. Which facilities fall in the top and bottom 5% of staffing quality?**
 (Creating a national “watch list” and “excellence list.”)
 
-#### **19. How do all staffing roles relate to each other?**
+###### **19. How do all staffing roles relate to each other?**
 (Full correlation matrix across RN, LPN, CNA, NA trainees, Med Aides.)
 
-#### **20. What is the overall staffing quality score for each state?**
+###### **20. What is the overall staffing quality score for each state?**
 (A composite metric combining staffing levels, mix, and consistency.)
 
 These 20 questions give a complete, multi-angle understanding of staffing quality,
 operations, integrity, and risk across the entire United States nursing home sector
 for Q2 2024.
 
+## NOTE:
+
+**The executive dashboards below summarize key national and state-level staffing insights.
+For regulatory review, audit readiness, and reproducibility, all calculations, transformations, and supporting analyses are documented in the sections that follow, including Python workflows and detailed report visuals.**
+
+## Executive Summary - National Staffing Overview (Q2 2024)
+
+![](dashboardsreenshot.png)
+
 ***
+
+
+This dashboard provides a national-level overview of nursing home staffing patterns using CMS PBJ daily staffing data for Q2 2024.
+On average, facilities report 7.69 total nursing hours per resident day (HPRD), with staffing distributed across RN (0.46 HPRD), LPN (0.79 HPRD), and CNA (2.11 HPRD) roles.
+While a majority of facilities meet CMS minimum staffing requirements, approximately one-quarter fail to meet at least one required threshold, indicating persistent compliance risk.
+Significant geographic variation is observed. Certain states consistently demonstrate higher staffing adequacy, while others cluster at the lower end of national averages, suggesting uneven workforce capacity and potential care quality disparities.
+A composite state-level staffing quality score further highlights these differences, offering a simplified indicator to support high-level comparison and prioritization.
+Weekday and weekend staffing patterns remain largely stable, though modest reductions in RN and CNA coverage are observed on weekends.
+Overall, the findings indicate that national staffing levels meet baseline standards but remain fragile, with concentrated risk in specific states and facility groups.
+
+
+***
+
+
+
 
 ### **Question 1 What is the National Average HPRD?** This analysis answers a core staffing question:
 
