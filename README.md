@@ -1,5 +1,5 @@
-# Veritas Data Services
-## PBJ Daily Nurse Staffing-Q2 2024 (CMS)
+## Veritas Data Services
+### PBJ Daily Nurse Staffing-Q2 2024 (CMS)
 ### Project Introduction & Analysis Plan
 
 (**Lead Analyst - Sharon Mwandoe**)
@@ -154,7 +154,7 @@ for Q2 2024.
 **The executive dashboards below summarize key national and state-level staffing insights.
 For regulatory review, audit readiness, and reproducibility, all calculations, transformations, and supporting analyses are documented in the sections that follow, including Python workflows and detailed report visuals.**
 
-## Executive Summary - National Staffing Overview (Q2 2024)
+## Primary Executive Summary Dashboard- National Staffing Overview (Q2 2024)
 
 
 ![](screenshot8.png)
@@ -1652,34 +1652,32 @@ This provides a more complete and responsible picture of national staffing perfo
 
 
 
+## **Power BI  Detailed Reports **
 
 
-## **Power BI Reports and Excutive Dashboard (in progress)**
-
-
-## **1. National Staffing Overview (Q2 2024)**
+#### **1. National Staffing Overview (Q2 2024)**
 
     
 
 ![](pbj_q1_q3_national_staffing_overview.png)
 
-## **2. State and Region Staffing Analysis (Q2 2024)**
+### **2. State and Region Staffing Analysis (Q2 2024)**
 
 ![](screenshot2.png)
 
-## **3. Facility Operations (Q2 2024)**
+### **3. Facility Operations (Q2 2024)**
 
 ![](screenshort3.png)
 
-## **4. Census Effects (Q2 2024)**
+### **4. Census Effects (Q2 2024)**
 
 ![](screenshort4.png)
 
-## **5. Data Quality and Reporting Check (Q2 2024)**
+### **5. Data Quality and Reporting Check (Q2 2024)**
 
 ![](screenshort5.png)
 
-## **6. Staff and Advanced Analytics**
+### **6. Staff and Advanced Analytics**
 
 ![](screenshot6.png)
 
