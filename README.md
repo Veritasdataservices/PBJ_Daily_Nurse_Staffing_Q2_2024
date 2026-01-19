@@ -1686,8 +1686,9 @@ This provides a more complete and responsible picture of national staffing perfo
 ---
 **Sharon Mwandoe - Lead Data Analyst**
 
+##### Veritas Data Services — Operated by *Aletheia Veritas Analytics Services © 2025* All Rights Reserved.
 
-**© 2025 Veritas Data Services. All rights reserved.**
+
 
 
 
