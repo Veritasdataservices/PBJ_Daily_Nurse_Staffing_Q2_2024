@@ -12,13 +12,12 @@ The Payroll-Based Journal (PBJ) Daily Nurse Staffing Q2 2024 dataset, published 
 
 This project, conducted by Veritas Data Services, transforms this large administrative dataset into clear, actionable insights that help stakeholders understand staffing levels, operational patterns, and care delivery risks across facilities.
 
-##### Veritas Data Services : PBJ Daily Nurse Staffing Q2 2024 – 
+
 **(PBJ_Daily_Nurse_Staffing_Q2_2024_Cleaning_Pipeline.ipynb)**
 
 Contains the full data engineering workflow, including raw CMS PBJ data ingestion, data type corrections, missing-value handling, anomaly detection, creation of HPRD and staffing metrics, and final dataset validation.
 Full Analysis & Visualization
-
-##### **Veritas Data Services : PBJ Daily Nurse Staffing Q2 2024**  
+  
 **(PBJ_Daily_Nurse_Staffing_Q2_2024_Final.ipynb)**
 
 Contains all analytical logic for Questions 1–20, including calculations, statistical methods, chart generation, and healthcare-focused interpretations used throughout this project.
@@ -154,7 +153,7 @@ for Q2 2024.
 **The executive dashboards below summarize key national and state-level staffing insights.
 For regulatory review, audit readiness, and reproducibility, all calculations, transformations, and supporting analyses are documented in the sections that follow, including Python workflows and detailed report visuals.**
 
-## Primary Executive Summary Dashboard- National Staffing Overview (Q2 2024)
+## Primary Executive Summary Dashboard - National Staffing Overview (Q2 2024)
 
 
 ![](screenshot8.png)
@@ -173,7 +172,26 @@ Overall, the findings indicate that national staffing levels meet baseline stand
 
 ***
 
+## Facility Level Risk & Compliance Dashboard - (Q2 2024)
 
+![](pbj-q2-24-dash2.png)
+
+
+This dashboard provides a facility-level view of staffing risk and CMS compliance using PBJ daily staffing data for Q2 2024.
+Facilities are evaluated based on average total nursing hours per resident day (HPRD) and classified into normal, high and low-staffing groups. While national averages suggest baseline compliance, this view reveals specific facilities operating near or below CMS minimum thresholds (4.1 HPRD).
+
+Weekday versus weekend comparisons further highlight staffing instability, particularly reductions in RN and CNA coverage.
+Overall, the dashboard supports risk-focused oversight and targeted compliance monitoring.
+
+## Overall Conclusion
+
+Together, these dashboards provide a layered view of nurse staffing performance, moving from national and state-level trends to facility-level risk and compliance exposure. While aggregate averages suggest baseline adequacy, deeper analysis reveals persistent variability, weekend staffing drops, and facility-specific compliance risks that would be missed without drill-down visibility.
+
+This structure supports informed oversight, targeted intervention, and defensible decision-making based on auditable CMS PBJ data.
+
+***
+
+## PBJ Staffing Audit & Compliance Validation Analysis (Depth)
 
 
 ### **Question 1 What is the National Average HPRD?** This analysis answers a core staffing question:
