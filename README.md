@@ -1665,6 +1665,8 @@ How consistent, stable, and RN-led that care is.
 The visualizations clearly show that states differ significantly depending on whether we measure volume (simple score) or quality structure (composite score).
 This provides a more complete and responsible picture of national staffing performance.
 
+***
+
 
 
 
