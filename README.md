@@ -158,8 +158,6 @@ For regulatory review, audit readiness, and reproducibility, all calculations, t
 
 ![](screenshot8.png)
 
-***
-
 
 This dashboard provides a national-level overview of nursing home staffing patterns using CMS PBJ daily staffing data for Q2 2024.
 On average, facilities report 7.69 total nursing hours per resident day (HPRD), with staffing distributed across RN (0.46 HPRD), LPN (0.79 HPRD), and CNA (2.11 HPRD) roles.
